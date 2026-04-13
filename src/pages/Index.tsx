@@ -1,16 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/landing/Navbar";
+import HeroSection from "@/components/landing/HeroSection";
+import PistaSection from "@/components/landing/PistaSection";
+import ConhecaSection from "@/components/landing/ConhecaSection";
+import AtrativosSection from "@/components/landing/AtrativosSection";
+import EventosSection from "@/components/landing/EventosSection";
+import ServicosSection from "@/components/landing/ServicosSection";
+import StatusObraSection from "@/components/landing/StatusObraSection";
+import LocalizacaoSection from "@/components/landing/LocalizacaoSection";
+import CTASection from "@/components/landing/CTASection";
+import ContatoSection from "@/components/landing/ContatoSection";
+import Footer from "@/components/landing/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
-  return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
-  );
-};
-
-const Index = PlaceholderIndex;
+const Index = () => (
+  <div>
+    <Navbar />
+    <HeroSection />
+    <PistaSection />
+    <ConhecaSection />
+    <AtrativosSection />
+    <EventosSection />
+    <ServicosSection />
+    <StatusObraSection />
+    <LocalizacaoSection />
+    <CTASection />
+    <ContatoSection />
+    <Footer />
+  </div>
+);
 
 export default Index;
