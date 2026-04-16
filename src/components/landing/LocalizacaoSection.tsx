@@ -67,7 +67,7 @@ const LocalizacaoSection = () => (
         <div className="rounded-sm overflow-hidden border border-border min-h-[400px] lg:min-h-full shadow-sm">
           <iframe
             title="Localização do Aeródromo - BR-050 Km 133"
-            src="https://www.google.com/maps?q=BR-050,+Km+133,+Uberaba+-+MG&output=embed"
+            src="https://www.google.com/maps?q=-19.416115,-48.071437&z=16&output=embed"
             className="w-full h-full min-h-[400px]"
             style={{ border: 0 }}
             loading="lazy"
