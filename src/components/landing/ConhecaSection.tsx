@@ -2,10 +2,6 @@ import SectionLabel from "./SectionLabel";
 import SectionTitle from "./SectionTitle";
 
 const DIFERENCIAIS = [
-  { title: "Pista Asfaltada", desc: "900 m de pista em asfalto com sinalização completa.", imgAlt: "Pista" },
-  { title: "Hangar Coberto", desc: "Proteção e segurança para sua aeronave.", imgAlt: "Hangar" },
-  { title: "Área de Abastecimento", desc: "Posto próprio de combustível de aviação.", imgAlt: "Abastecimento" },
-  { title: "Acesso Rápido", desc: "Apenas 1 km de estrada de terra até a BR-050.", imgAlt: "Acesso" },
   { title: "Câmera de Meteorologia", desc: "Monitoramento meteorológico em tempo real.", imgAlt: "Meteorologia" },
   { title: "Tanque de Combustível", desc: "Tanque próprio para abastecimento de aeronaves.", imgAlt: "Tanque" },
   { title: "Sistema de Segurança", desc: "Vigilância 24h e controle de acesso.", imgAlt: "Segurança" },
