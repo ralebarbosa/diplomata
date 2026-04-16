@@ -1,5 +1,6 @@
 import Navbar from "@/components/landing/Navbar";
 import HeroSection from "@/components/landing/HeroSection";
+import DestaqueSection from "@/components/landing/DestaqueSection";
 import PistaSection from "@/components/landing/PistaSection";
 import ConhecaSection from "@/components/landing/ConhecaSection";
 import AtrativosSection from "@/components/landing/AtrativosSection";
