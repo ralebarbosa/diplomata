@@ -6,7 +6,7 @@ const LocalizacaoSection = () => (
   <section id="localizacao" className="py-20 px-[6%] bg-background">
     <div className="max-w-[1200px] mx-auto">
       <SectionLabel>Localização Privilegiada</SectionLabel>
-      <SectionTitle>LOCALIZAÇÃO</SectionTitle>
+      <SectionTitle>LOCALIZAÇÃO ESTRATÉGICA</SectionTitle>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">
         {/* Coluna esquerda: Imagem aérea com vizinhos */}
