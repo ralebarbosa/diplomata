@@ -1,70 +1,79 @@
+import { MapPin, Navigation, Clock } from "lucide-react";
 import SectionLabel from "./SectionLabel";
 import SectionTitle from "./SectionTitle";
 
 const DISTANCIAS = [
-  { cidade: "Uberlândia", tempo: "45 min" },
-  { cidade: "Uberaba", tempo: "40 min" },
-  { cidade: "Ribeirão Preto", tempo: "2h30" },
-  { cidade: "São Paulo", tempo: "5h" },
+  { cidade: "Uberaba - MG", tempo: "22 min" },
+  { cidade: "Uberlândia - MG", tempo: "31 min" },
+  { cidade: "Araguari - MG", tempo: "55 min" },
+  { cidade: "Ituverava - SP", tempo: "59 min" },
 ];
 
 const LocalizacaoSection = () => (
   <section id="localizacao" className="py-20 px-[6%] bg-background">
-    <div className="max-w-[1100px] mx-auto">
-      <SectionLabel>Como chegar</SectionLabel>
+    <div className="max-w-[1200px] mx-auto">
+      <SectionLabel>Localização Privilegiada</SectionLabel>
       <SectionTitle>LOCALIZAÇÃO</SectionTitle>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-        <div>
-          <p className="text-[11px] font-semibold text-muted-foreground tracking-[0.12em] uppercase mb-2.5">
-            Endereço
-          </p>
-          <p className="text-base text-foreground leading-[1.75] mb-1.5">Rodovia BR-050, Km 133</p>
-          <p className="text-sm text-muted-foreground leading-[1.75] mb-8">
-            Entre Uberlândia-MG e Uberaba-MG
-            <br />
-            Acesso exclusivo pela beira da rodovia
-            <br />
-            Apenas 1 km de estrada de terra
-          </p>
-          <p className="text-[11px] font-semibold text-muted-foreground tracking-[0.12em] uppercase mb-1">
-            Distâncias
-          </p>
-          {DISTANCIAS.map((d) => (
-            <div
-              key={d.cidade}
-              className="flex justify-between items-center py-[15px] border-b border-border last:border-b-0"
-            >
-              <span className="text-[15px] text-foreground/70">{d.cidade}</span>
-              <span className="font-display text-2xl text-primary tracking-[0.06em]">{d.tempo}</span>
-            </div>
-          ))}
+
+      {/* Destaque: Fácil Acesso */}
+      <div className="mb-10 p-6 md:p-8 bg-primary/5 border-l-4 border-primary rounded-sm">
+        <div className="flex items-start gap-4">
+          <Navigation className="w-6 h-6 text-primary mt-1 shrink-0" />
+          <div>
+            <p className="font-display text-2xl md:text-3xl text-foreground tracking-[0.06em] mb-2">
+              FÁCIL ACESSO
+            </p>
+            <p className="text-base text-muted-foreground leading-[1.7]">
+              Rodovia BR-050, Km 133 — Entre Uberlândia-MG e Uberaba-MG
+            </p>
+          </div>
         </div>
-        <div>
-          <p className="text-[11px] font-semibold text-muted-foreground tracking-[0.12em] uppercase mb-4">
-            Entorno Estratégico
-          </p>
-          <div className="flex flex-col gap-[18px] mb-7">
-            {[
-              {
-                title: "Vinícola Arpuro",
-                desc: "Ao lado do aeródromo — destino refinado para receber visitantes.",
-              },
-              {
-                title: "Condomínio de Casas de Campo",
-                desc: "Projeto em desenvolvimento adjacente — oportunidade de lotes em breve.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="border-l-2 border-primary pl-[18px]">
-                <p className="text-[15px] font-semibold text-foreground mb-1">{item.title}</p>
-                <p className="text-[13px] text-muted-foreground leading-[1.6]">{item.desc}</p>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">
+        {/* Coluna esquerda: distâncias */}
+        <div className="flex flex-col">
+          <div className="flex items-center gap-2 mb-5">
+            <Clock className="w-4 h-4 text-primary" />
+            <p className="text-[11px] font-semibold text-muted-foreground tracking-[0.18em] uppercase">
+              Tempo de Deslocamento
+            </p>
+          </div>
+
+          <div className="flex-1">
+            {DISTANCIAS.map((d) => (
+              <div
+                key={d.cidade}
+                className="flex justify-between items-center py-[18px] border-b border-border last:border-b-0"
+              >
+                <span className="text-[15px] text-foreground/80">{d.cidade}</span>
+                <span className="font-display text-2xl md:text-3xl text-primary tracking-[0.06em]">
+                  {d.tempo}
+                </span>
               </div>
             ))}
           </div>
-          <div className="bg-accent rounded-sm h-[180px] flex items-center justify-center border border-dashed border-muted-foreground/30">
-            <span className="text-[11px] text-muted-foreground tracking-[0.08em] uppercase">
-              Embed Google Maps
-            </span>
+
+          {/* Destaque: 1 km da rodovia */}
+          <div className="mt-8 p-5 bg-foreground text-background rounded-sm flex items-center gap-4">
+            <MapPin className="w-6 h-6 text-primary shrink-0" />
+            <p className="font-display text-lg md:text-xl tracking-[0.06em] leading-tight">
+              APENAS 1 KM DA BEIRA DA RODOVIA
+            </p>
           </div>
+        </div>
+
+        {/* Coluna direita: Mapa */}
+        <div className="rounded-sm overflow-hidden border border-border min-h-[400px] lg:min-h-full shadow-sm">
+          <iframe
+            title="Localização do Aeródromo - BR-050 Km 133"
+            src="https://www.google.com/maps?q=BR-050,+Km+133,+Uberaba+-+MG&output=embed"
+            className="w-full h-full min-h-[400px]"
+            style={{ border: 0 }}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
         </div>
       </div>
     </div>
