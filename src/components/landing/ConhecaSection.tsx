@@ -6,6 +6,7 @@ import segurancaImg from "@/assets/diferencial-seguranca.jpg";
 import meteorologiaImg from "@/assets/diferencial-meteorologia.jpg";
 import patioImg from "@/assets/diferencial-patio.jpg";
 import hangaragemImg from "@/assets/diferencial-hangaragem.jpg";
+import hangaresImg from "@/assets/diferencial-hangares.jpg";
 
 const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: string }> = [
   { title: "Câmera de Meteorologia", desc: "Monitoramento meteorológico em tempo real.", imgAlt: "Meteorologia", img: meteorologiaImg },
@@ -15,7 +16,7 @@ const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: s
   { title: "App Multifunção", desc: "Aplicativo para gestão e comunicação.", imgAlt: "App" },
   { title: "Pátio para Aeronaves", desc: "Pátio amplo para estacionamento.", imgAlt: "Pátio", img: patioImg },
   { title: "Hangaragem", desc: "Hangaragem coberta para sua aeronave.", imgAlt: "Hangaragem", img: hangaragemImg },
-  { title: "Espaço para Hangares", desc: "Lotes disponíveis para construção de hangares.", imgAlt: "Hangares" },
+  { title: "Espaço para Hangares", desc: "Lotes disponíveis para construção de hangares.", imgAlt: "Hangares", img: hangaresImg },
 ];
 
 const ConhecaSection = () => (
