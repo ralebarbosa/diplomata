@@ -25,8 +25,8 @@ const HeroSection = () => (
         <span className="text-primary">SS8X</span>
       </h1>
       <p className="text-base text-primary-foreground/50 leading-[1.75] max-w-[480px] mb-11 font-light">
-        O seu aeródromo alternativo do Triângulo Mineiro — localizado na BR-050, entre Uberaba e
-        Uberlândia, com estrutura completa e zero tarifas.
+        O seu aeródromo alternativo do Triângulo Mineiro, com hangaragem, pátio e arrendamento
+        de lotes
       </p>
       <div className="flex flex-col sm:flex-row gap-3.5">
         <a
