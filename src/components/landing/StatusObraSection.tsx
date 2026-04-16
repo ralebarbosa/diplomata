@@ -2,11 +2,11 @@ import { CheckCircle2, Clock, Sparkles } from "lucide-react";
 import SectionLabel from "./SectionLabel";
 
 const ETAPAS = [
-  { status: "done", icon: CheckCircle2, title: "Terraplanagem", desc: "Nivelamento e preparação do terreno" },
-  { status: "done", icon: CheckCircle2, title: "Pista Pavimentada", desc: "1.200m de extensão concluídos" },
-  { status: "done", icon: CheckCircle2, title: "Estrutura Principal", desc: "Hangares e pátio finalizados" },
-  { status: "progress", icon: Clock, title: "Acabamentos Finais", desc: "Sinalização e instalações" },
-  { status: "next", icon: Sparkles, title: "Inauguração", desc: "Operações abertas ao público" },
+  { status: "done", icon: CheckCircle2, title: "PISTA OPERACIONAL", desc: "Pista registrada e 100% operacional" },
+  { status: "done", icon: CheckCircle2, title: "PÁTIO", desc: "Pátio compactado e recebendo aeronaves" },
+  { status: "done", icon: CheckCircle2, title: "SEGURANÇA", desc: "Câmeras e sistema de segurança ativos" },
+  { status: "done", icon: CheckCircle2, title: "COMBUSTÍVEL", desc: "Tanque disponível e padronizado" },
+  { status: "progress", icon: Clock, title: "HANGAR 01", desc: "Fase de concretagem do piso" },
 ];
 
 const PROGRESSO = 90;
