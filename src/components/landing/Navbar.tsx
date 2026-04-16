@@ -28,17 +28,15 @@ const Navbar = () => {
           borderBottom: scrolled ? '1px solid hsl(var(--border))' : 'none',
         }}
       >
-        <div className="flex items-center gap-2.5">
-          <div className="w-[30px] h-[30px] rounded-full bg-primary flex items-center justify-center font-display text-[13px] text-primary-foreground">
-            8X
-          </div>
-          <span
-            className="font-display text-xl tracking-[0.12em] transition-colors duration-300"
-            style={{ color: scrolled ? 'hsl(var(--dark))' : '#fff' }}
-          >
-            DIPLOMATA
-          </span>
-        </div>
+        <a href="#" className="flex items-center">
+          <img
+            src={logoDiplomata}
+            alt="Aeródromo Diplomata"
+            className={`h-9 md:h-10 w-auto transition-all duration-300 ${
+              scrolled ? "" : "brightness-0 invert"
+            }`}
+          />
+        </a>
 
         <div className="hidden md:flex gap-9">
           {NAV_LINKS.map((l) => (
