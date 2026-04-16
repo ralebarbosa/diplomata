@@ -65,7 +65,7 @@ const StatusObraSection = () => (
                 <Icon
                   className={`w-5 h-5 shrink-0 ${
                     isDone
-                      ? "text-primary"
+                      ? "text-green-600"
                       : isProgress
                       ? "text-foreground/80"
                       : "text-muted-foreground/50"
@@ -74,7 +74,7 @@ const StatusObraSection = () => (
                 <span
                   className={`text-[9px] tracking-[0.18em] uppercase font-semibold ${
                     isDone
-                      ? "text-primary"
+                      ? "text-green-600"
                       : isProgress
                       ? "text-foreground/70"
                       : "text-muted-foreground/60"
