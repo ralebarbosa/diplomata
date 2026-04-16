@@ -98,18 +98,6 @@ const StatusObraSection = () => (
         })}
       </div>
 
-      {/* Highlight callout */}
-      <div className="mt-10 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 bg-primary/5 border border-primary/20 rounded-sm p-6 md:p-7">
-        <div className="shrink-0 w-11 h-11 rounded-full bg-primary/15 flex items-center justify-center">
-          <Sparkles className="w-5 h-5 text-primary" />
-        </div>
-        <div className="flex-1">
-          <p className="text-[10px] text-primary tracking-[0.18em] uppercase mb-1 font-semibold">Em Breve</p>
-          <p className="text-sm text-foreground/80 leading-[1.6]">
-            Condições comerciais especiais para aquisição de lotes e hangares.
-          </p>
-        </div>
-      </div>
     </div>
   </section>
 );
