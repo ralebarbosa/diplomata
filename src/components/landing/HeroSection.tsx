@@ -9,14 +9,7 @@ const HeroSection = () => (
     <div className="absolute inset-0 bg-gradient-to-t from-black/[0.88] via-black/45 to-black/20" />
     <div className="absolute left-[6%] top-0 bottom-0 w-[2px] bg-primary/20" />
 
-    <div className="absolute top-20 right-[6%] flex flex-col items-end gap-1">
-      <span className="text-[10px] text-primary-foreground/30 tracking-[0.14em] uppercase">
-        Aeródromo Particular
-      </span>
-      <span className="text-[10px] text-primary-foreground/30 tracking-[0.14em] uppercase">
-        Triângulo Mineiro · BR-050
-      </span>
-    </div>
+
 
     <div className="relative max-w-[820px]">
       <h1 className="font-display text-[60px] md:text-[100px] leading-[0.9] text-primary-foreground tracking-[0.03em] mb-7">
