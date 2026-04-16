@@ -6,7 +6,11 @@ const LocalizacaoSection = () => (
   <section id="localizacao" className="py-20 px-[6%] bg-background">
     <div className="max-w-[1200px] mx-auto">
       <SectionLabel>Localização Privilegiada</SectionLabel>
-      <SectionTitle>LOCALIZAÇÃO ESTRATÉGICA</SectionTitle>
+      <SectionTitle mb={16}>LOCALIZAÇÃO ESTRATÉGICA</SectionTitle>
+
+      <p className="font-display text-lg md:text-2xl text-foreground/80 italic max-w-3xl mb-10 leading-snug">
+        Localizado ao lado da <span className="text-primary not-italic font-semibold">Vinícola Arpuro</span> e do futuro <span className="text-primary not-italic font-semibold">Condomínio Casa de Campo</span>
+      </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">
         {/* Coluna esquerda: Imagem aérea com vizinhos */}
