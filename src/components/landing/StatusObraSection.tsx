@@ -12,26 +12,26 @@ const ETAPAS = [
 const PROGRESSO = 90;
 
 const StatusObraSection = () => (
-  <section className="bg-dark py-24 px-[6%] border-t border-primary-foreground/10">
+  <section className="bg-background py-24 px-[6%] border-t border-border">
     <div className="max-w-[1100px] mx-auto">
       <div className="text-center mb-14">
         <SectionLabel>Obra em andamento</SectionLabel>
-        <h2 className="font-display text-[42px] md:text-[52px] text-primary-foreground tracking-[0.06em] leading-none mb-4">
+        <h2 className="font-display text-[42px] md:text-[52px] text-foreground tracking-[0.06em] leading-none mb-4">
           STATUS DA OBRA
         </h2>
-        <p className="text-sm text-primary-foreground/50 max-w-xl mx-auto leading-[1.7]">
+        <p className="text-sm text-muted-foreground max-w-xl mx-auto leading-[1.7]">
           Acompanhe em tempo real o avanço da construção do Aeródromo Diplomata.
         </p>
       </div>
 
       {/* Progress display */}
-      <div className="bg-dark-surface border border-primary-foreground/10 rounded-sm p-10 md:p-14 mb-14">
+      <div className="bg-card border border-border rounded-sm p-10 md:p-14 mb-14 shadow-sm">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-6">
           <div>
-            <p className="text-[10px] text-primary tracking-[0.18em] uppercase mb-2">
+            <p className="text-[10px] text-primary tracking-[0.18em] uppercase mb-2 font-semibold">
               Progresso geral
             </p>
-            <p className="text-sm text-primary-foreground/60 max-w-md leading-[1.6]">
+            <p className="text-sm text-muted-foreground max-w-md leading-[1.6]">
               Estrutura em fase final — preparando para entrega oficial.
             </p>
           </div>
@@ -39,10 +39,10 @@ const StatusObraSection = () => (
             <span className="font-display text-[80px] md:text-[96px] text-primary leading-none tracking-[0.04em]">
               {PROGRESSO}
             </span>
-            <span className="font-display text-[32px] text-primary-foreground/40">%</span>
+            <span className="font-display text-[32px] text-muted-foreground/60">%</span>
           </div>
         </div>
-        <div className="relative h-[6px] bg-primary-foreground/10 rounded-full overflow-hidden">
+        <div className="relative h-[6px] bg-muted rounded-full overflow-hidden">
           <div
             className="absolute inset-y-0 left-0 bg-gradient-to-r from-primary to-primary/70 rounded-full"
             style={{ width: `${PROGRESSO}%` }}
@@ -51,7 +51,7 @@ const StatusObraSection = () => (
       </div>
 
       {/* Timeline of stages */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-px bg-primary-foreground/10 border border-primary-foreground/10 rounded-sm overflow-hidden">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-px bg-border border border-border rounded-sm overflow-hidden">
         {ETAPAS.map((etapa) => {
           const Icon = etapa.icon;
           const isDone = etapa.status === "done";
@@ -59,7 +59,7 @@ const StatusObraSection = () => (
           return (
             <div
               key={etapa.title}
-              className="bg-dark-surface p-7 flex flex-col gap-3 relative"
+              className="bg-card p-7 flex flex-col gap-3 relative"
             >
               <div className="flex items-center gap-2.5">
                 <Icon
@@ -67,8 +67,8 @@ const StatusObraSection = () => (
                     isDone
                       ? "text-primary"
                       : isProgress
-                      ? "text-primary-foreground/80"
-                      : "text-primary-foreground/30"
+                      ? "text-foreground/80"
+                      : "text-muted-foreground/50"
                   }`}
                 />
                 <span
@@ -76,8 +76,8 @@ const StatusObraSection = () => (
                     isDone
                       ? "text-primary"
                       : isProgress
-                      ? "text-primary-foreground/60"
-                      : "text-primary-foreground/30"
+                      ? "text-foreground/70"
+                      : "text-muted-foreground/60"
                   }`}
                 >
                   {isDone ? "Concluído" : isProgress ? "Em andamento" : "Próximo"}
@@ -85,14 +85,12 @@ const StatusObraSection = () => (
               </div>
               <h3
                 className={`text-[15px] font-semibold leading-tight ${
-                  isDone || isProgress
-                    ? "text-primary-foreground"
-                    : "text-primary-foreground/50"
+                  isDone || isProgress ? "text-foreground" : "text-muted-foreground"
                 }`}
               >
                 {etapa.title}
               </h3>
-              <p className="text-[12px] text-primary-foreground/40 leading-[1.6]">
+              <p className="text-[12px] text-muted-foreground leading-[1.6]">
                 {etapa.desc}
               </p>
             </div>
@@ -106,8 +104,8 @@ const StatusObraSection = () => (
           <Sparkles className="w-5 h-5 text-primary" />
         </div>
         <div className="flex-1">
-          <p className="text-[10px] text-primary tracking-[0.18em] uppercase mb-1">Em Breve</p>
-          <p className="text-sm text-primary-foreground/70 leading-[1.6]">
+          <p className="text-[10px] text-primary tracking-[0.18em] uppercase mb-1 font-semibold">Em Breve</p>
+          <p className="text-sm text-foreground/80 leading-[1.6]">
             Condições comerciais especiais para aquisição de lotes e hangares.
           </p>
         </div>
