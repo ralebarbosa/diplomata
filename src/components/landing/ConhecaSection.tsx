@@ -8,6 +8,8 @@ const DIFERENCIAIS = [
   { title: "Operador para Apoio", desc: "Equipe de apoio dedicada ao piloto.", imgAlt: "Operador" },
   { title: "App Multifunção", desc: "Aplicativo para gestão e comunicação.", imgAlt: "App" },
   { title: "Pátio para Aeronaves", desc: "Pátio amplo para estacionamento.", imgAlt: "Pátio" },
+  { title: "Hangaragem", desc: "Hangaragem coberta para sua aeronave.", imgAlt: "Hangaragem" },
+  { title: "Espaço para Hangares", desc: "Lotes disponíveis para construção de hangares.", imgAlt: "Hangares" },
 ];
 
 const ConhecaSection = () => (
