@@ -20,7 +20,7 @@ const Index = () => (
     <PistaSection />
     <ConhecaSection />
     <ProjetoArquitetonicoSection />
-    <AtrativosSection />
+    
       <EventosSection />
       <StatusObraSection />
     <LocalizacaoSection />
