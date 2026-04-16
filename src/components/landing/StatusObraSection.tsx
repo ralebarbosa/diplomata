@@ -1,31 +1,114 @@
+import { CheckCircle2, Clock, Sparkles } from "lucide-react";
 import SectionLabel from "./SectionLabel";
-import personImage from "@/assets/person-runway.jpg";
+
+const ETAPAS = [
+  { status: "done", icon: CheckCircle2, title: "Terraplanagem", desc: "Nivelamento e preparação do terreno" },
+  { status: "done", icon: CheckCircle2, title: "Pista Pavimentada", desc: "1.200m de extensão concluídos" },
+  { status: "done", icon: CheckCircle2, title: "Estrutura Principal", desc: "Hangares e pátio finalizados" },
+  { status: "progress", icon: Clock, title: "Acabamentos Finais", desc: "Sinalização e instalações" },
+  { status: "next", icon: Sparkles, title: "Inauguração", desc: "Operações abertas ao público" },
+];
+
+const PROGRESSO = 90;
 
 const StatusObraSection = () => (
-  <section className="bg-dark border-t border-primary-foreground/10 overflow-hidden">
-    <div className="flex flex-col md:flex-row min-h-[360px]">
-      <div
-        className="md:w-[38%] min-h-[300px] bg-cover bg-center bg-top"
-        style={{ backgroundImage: `url(${personImage})` }}
-      />
-      <div className="flex-1 p-14 px-[5%]">
+  <section className="bg-dark py-24 px-[6%] border-t border-primary-foreground/10">
+    <div className="max-w-[1100px] mx-auto">
+      <div className="text-center mb-14">
         <SectionLabel>Obra em andamento</SectionLabel>
-        <h2 className="font-display text-[42px] text-primary-foreground tracking-[0.06em] leading-none mb-7">
+        <h2 className="font-display text-[42px] md:text-[52px] text-primary-foreground tracking-[0.06em] leading-none mb-4">
           STATUS DA OBRA
         </h2>
-        <div className="flex justify-between items-baseline mb-3.5 flex-wrap gap-2">
-          <span className="text-[13px] text-primary-foreground/35 tracking-[0.04em]">
-            Aeródromo 90% concluído — estrutura em fase final
-          </span>
-          <span className="font-display text-[40px] text-primary tracking-[0.06em]">90%</span>
+        <p className="text-sm text-primary-foreground/50 max-w-xl mx-auto leading-[1.7]">
+          Acompanhe em tempo real o avanço da construção do Aeródromo Diplomata.
+        </p>
+      </div>
+
+      {/* Progress display */}
+      <div className="bg-dark-surface border border-primary-foreground/10 rounded-sm p-10 md:p-14 mb-14">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-6">
+          <div>
+            <p className="text-[10px] text-primary tracking-[0.18em] uppercase mb-2">
+              Progresso geral
+            </p>
+            <p className="text-sm text-primary-foreground/60 max-w-md leading-[1.6]">
+              Estrutura em fase final — preparando para entrega oficial.
+            </p>
+          </div>
+          <div className="flex items-baseline gap-2">
+            <span className="font-display text-[80px] md:text-[96px] text-primary leading-none tracking-[0.04em]">
+              {PROGRESSO}
+            </span>
+            <span className="font-display text-[32px] text-primary-foreground/40">%</span>
+          </div>
         </div>
-        <div className="h-[3px] bg-primary-foreground/10 rounded-sm overflow-hidden mb-7">
-          <div className="h-full w-[90%] bg-primary rounded-sm" />
+        <div className="relative h-[6px] bg-primary-foreground/10 rounded-full overflow-hidden">
+          <div
+            className="absolute inset-y-0 left-0 bg-gradient-to-r from-primary to-primary/70 rounded-full"
+            style={{ width: `${PROGRESSO}%` }}
+          />
         </div>
-        <div className="border-l-2 border-primary pl-[18px]">
-          <p className="text-[10px] text-primary tracking-[0.14em] uppercase mb-1">Em Breve</p>
-          <p className="text-sm text-primary-foreground/50 leading-[1.7]">
-            Condições comerciais para lotes
+      </div>
+
+      {/* Timeline of stages */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-px bg-primary-foreground/10 border border-primary-foreground/10 rounded-sm overflow-hidden">
+        {ETAPAS.map((etapa) => {
+          const Icon = etapa.icon;
+          const isDone = etapa.status === "done";
+          const isProgress = etapa.status === "progress";
+          return (
+            <div
+              key={etapa.title}
+              className="bg-dark-surface p-7 flex flex-col gap-3 relative"
+            >
+              <div className="flex items-center gap-2.5">
+                <Icon
+                  className={`w-5 h-5 shrink-0 ${
+                    isDone
+                      ? "text-primary"
+                      : isProgress
+                      ? "text-primary-foreground/80"
+                      : "text-primary-foreground/30"
+                  }`}
+                />
+                <span
+                  className={`text-[9px] tracking-[0.18em] uppercase font-semibold ${
+                    isDone
+                      ? "text-primary"
+                      : isProgress
+                      ? "text-primary-foreground/60"
+                      : "text-primary-foreground/30"
+                  }`}
+                >
+                  {isDone ? "Concluído" : isProgress ? "Em andamento" : "Próximo"}
+                </span>
+              </div>
+              <h3
+                className={`text-[15px] font-semibold leading-tight ${
+                  isDone || isProgress
+                    ? "text-primary-foreground"
+                    : "text-primary-foreground/50"
+                }`}
+              >
+                {etapa.title}
+              </h3>
+              <p className="text-[12px] text-primary-foreground/40 leading-[1.6]">
+                {etapa.desc}
+              </p>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Highlight callout */}
+      <div className="mt-10 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 bg-primary/5 border border-primary/20 rounded-sm p-6 md:p-7">
+        <div className="shrink-0 w-11 h-11 rounded-full bg-primary/15 flex items-center justify-center">
+          <Sparkles className="w-5 h-5 text-primary" />
+        </div>
+        <div className="flex-1">
+          <p className="text-[10px] text-primary tracking-[0.18em] uppercase mb-1">Em Breve</p>
+          <p className="text-sm text-primary-foreground/70 leading-[1.6]">
+            Condições comerciais especiais para aquisição de lotes e hangares.
           </p>
         </div>
       </div>
