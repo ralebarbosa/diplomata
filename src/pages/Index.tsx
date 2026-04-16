@@ -8,6 +8,7 @@ import ProjetoArquitetonicoSection from "@/components/landing/ProjetoArquitetoni
 import EventosSection from "@/components/landing/EventosSection";
 import StatusObraSection from "@/components/landing/StatusObraSection";
 import LocalizacaoSection from "@/components/landing/LocalizacaoSection";
+import GaleriaSection from "@/components/landing/GaleriaSection";
 import CTASection from "@/components/landing/CTASection";
 import ContatoSection from "@/components/landing/ContatoSection";
 import Footer from "@/components/landing/Footer";
@@ -24,6 +25,7 @@ const Index = () => (
       <EventosSection />
       <StatusObraSection />
     <LocalizacaoSection />
+    <GaleriaSection />
     <CTASection />
     <ContatoSection />
     <Footer />
