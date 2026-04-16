@@ -2,9 +2,9 @@ import SectionLabel from "./SectionLabel";
 
 const PISTA_SPECS = [
   { label: "Indicativo", value: "SS8X" },
-  { label: "Comprimento", value: "900 m" },
-  { label: "Largura", value: "18 m" },
-  { label: "Piso", value: "Asfalto" },
+  { label: "Comprimento", value: "1040 m" },
+  { label: "Largura", value: "20 m" },
+  { label: "Piso", value: "Terra" },
   { label: "Operação", value: "VFR Diurna" },
   { label: "Cabeceiras", value: "05/23" },
 ];
