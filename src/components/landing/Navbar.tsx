@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import logoDiplomata from "@/assets/logo-diplomata.png";
 
 const NAV_LINKS = [
   { href: "#pista", label: "Pista" },
