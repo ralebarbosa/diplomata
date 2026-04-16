@@ -1,14 +1,14 @@
 
-Vou atualizar o iframe do Google Maps em `LocalizacaoSection.tsx` para usar as coordenadas exatas fornecidas, garantindo que o pin vermelho apareça precisamente no local do aeródromo.
+Vou diminuir o zoom do iframe do Google Maps na seção "Localização" para mostrar uma área maior do entorno.
 
 ## Mudança
 
-Em `src/components/landing/LocalizacaoSection.tsx`, substituir o `src` do iframe por:
+Em `src/components/landing/LocalizacaoSection.tsx`, alterar o parâmetro `z=16` para `z=13` na URL do iframe. Isso reduz o nível de zoom, exibindo uma visão mais ampla da região (BR-050 e arredores) ao invés de focar apenas no ponto exato.
 
 ```
-https://www.google.com/maps?q=-19.416115,-48.071437&z=16&output=embed
+src="https://www.google.com/maps?q=-19.416115,-48.071437&z=13&t=k&output=embed"
 ```
 
-Usar `q=lat,lng` força o Google Maps a renderizar um marcador (pin vermelho) exatamente nas coordenadas fornecidas, com zoom 16 para uma visualização aproximada do entorno.
+O pin vermelho continua marcando as coordenadas exatas do aeródromo, mas com mais contexto geográfico visível ao redor.
 
 Nenhum outro elemento da seção será alterado.
