@@ -6,11 +6,11 @@ const PISTA_SPECS = [
   { label: "Largura", value: "18 m" },
   { label: "Piso", value: "Asfalto" },
   { label: "Operação", value: "VFR Diurna" },
-  { label: "Tarifas", value: "Zero" },
+  { label: "Cabeceiras", value: "05/23" },
 ];
 
 const PistaSection = () => (
-  <section id="pista" className="py-12 px-[6%] bg-background">
+  <section id="pista" className="py-12 px-[6%] bg-muted">
     <div className="max-w-[1100px] mx-auto">
       <div className="flex items-center justify-between mb-5 flex-wrap gap-3">
         <div>
