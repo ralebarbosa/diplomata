@@ -1,10 +1,11 @@
 import SectionLabel from "./SectionLabel";
 import SectionTitle from "./SectionTitle";
 import operadorImg from "@/assets/diferencial-operador.jpg";
+import tanqueImg from "@/assets/diferencial-tanque.jpg";
 
 const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: string }> = [
   { title: "Câmera de Meteorologia", desc: "Monitoramento meteorológico em tempo real.", imgAlt: "Meteorologia" },
-  { title: "Tanque de Combustível", desc: "Tanque próprio para abastecimento de aeronaves.", imgAlt: "Tanque" },
+  { title: "Tanque de Combustível", desc: "Tanque próprio para abastecimento de aeronaves.", imgAlt: "Tanque", img: tanqueImg },
   { title: "Sistema de Segurança", desc: "Vigilância 24h e controle de acesso.", imgAlt: "Segurança" },
   { title: "Operador para Apoio", desc: "Equipe de apoio dedicada ao piloto.", imgAlt: "Operador", img: operadorImg },
   { title: "App Multifunção", desc: "Aplicativo para gestão e comunicação.", imgAlt: "App" },
