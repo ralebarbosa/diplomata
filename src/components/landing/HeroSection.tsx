@@ -19,9 +19,6 @@ const HeroSection = () => (
     </div>
 
     <div className="relative max-w-[820px]">
-      <span className="text-[10px] font-semibold text-primary tracking-[0.18em] uppercase block mb-5">
-        SS8X — Operação VFR Diurna
-      </span>
       <h1 className="font-display text-[60px] md:text-[100px] leading-[0.9] text-primary-foreground tracking-[0.03em] mb-7">
         DIPLOMATA
         <br />
