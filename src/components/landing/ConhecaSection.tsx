@@ -3,9 +3,10 @@ import SectionTitle from "./SectionTitle";
 import operadorImg from "@/assets/diferencial-operador.jpg";
 import tanqueImg from "@/assets/diferencial-tanque.jpg";
 import segurancaImg from "@/assets/diferencial-seguranca.jpg";
+import meteorologiaImg from "@/assets/diferencial-meteorologia.jpg";
 
 const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: string }> = [
-  { title: "Câmera de Meteorologia", desc: "Monitoramento meteorológico em tempo real.", imgAlt: "Meteorologia" },
+  { title: "Câmera de Meteorologia", desc: "Monitoramento meteorológico em tempo real.", imgAlt: "Meteorologia", img: meteorologiaImg },
   { title: "Tanque de Combustível", desc: "Tanque próprio para abastecimento de aeronaves.", imgAlt: "Tanque", img: tanqueImg },
   { title: "Sistema de Segurança", desc: "Vigilância 24h e controle de acesso.", imgAlt: "Segurança", img: segurancaImg },
   { title: "Operador para Apoio", desc: "Equipe de apoio dedicada ao piloto.", imgAlt: "Operador", img: operadorImg },
