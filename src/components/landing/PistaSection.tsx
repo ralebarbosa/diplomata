@@ -4,7 +4,7 @@ const PISTA_SPECS = [
   { label: "Indicativo", value: "SS8X" },
   { label: "Comprimento", value: "1040 m" },
   { label: "Largura", value: "20 m" },
-  { label: "Piso", value: "Terra" },
+  { label: "Altitude", value: "2530 pés" },
   { label: "Operação", value: "VFR Diurna" },
   { label: "Cabeceiras", value: "05/23" },
 ];
