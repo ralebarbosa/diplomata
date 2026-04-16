@@ -3,11 +3,15 @@ import SectionTitle from "./SectionTitle";
 import galeria01 from "@/assets/galeria-01.png";
 import galeria02 from "@/assets/galeria-02.png";
 import galeria03 from "@/assets/galeria-03.jpeg";
+import galeria04 from "@/assets/galeria-04.png";
+import galeria05 from "@/assets/galeria-05.png";
 
 const fotos = [
   { src: galeria01, alt: "Aeronaves estacionadas na pista do Aeródromo Diplomata" },
   { src: galeria02, alt: "Aeronave monomotor na pista de terra do Aeródromo Diplomata" },
   { src: galeria03, alt: "Aeronave Cessna Caravan no Aeródromo Diplomata" },
+  { src: galeria04, alt: "Beechcraft Bonanza na pista do Aeródromo Diplomata" },
+  { src: galeria05, alt: "Piper PT-NHP na pista do Aeródromo Diplomata" },
 ];
 
 const GaleriaSection = () => (
