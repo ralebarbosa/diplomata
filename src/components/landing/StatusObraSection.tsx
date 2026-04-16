@@ -17,7 +17,7 @@ const StatusObraSection = () => (
       <div className="text-center mb-14">
         <SectionLabel>Obra em andamento</SectionLabel>
         <h2 className="font-display text-[42px] md:text-[52px] text-foreground tracking-[0.06em] leading-none mb-4">
-          STATUS DA OBRA
+          STATUS DO AERÓDROMO
         </h2>
         <p className="text-sm text-muted-foreground max-w-xl mx-auto leading-[1.7]">
           Acompanhe em tempo real o avanço da construção do Aeródromo Diplomata.
