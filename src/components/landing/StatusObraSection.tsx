@@ -32,7 +32,7 @@ const StatusObraSection = () => (
               Progresso geral
             </p>
             <p className="text-sm text-muted-foreground max-w-md leading-[1.6]">
-              Estrutura em fase final — preparando para entrega oficial.
+              FASE FINAL
             </p>
           </div>
           <div className="flex items-baseline gap-2">
