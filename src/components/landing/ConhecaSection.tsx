@@ -48,7 +48,7 @@ const ConhecaSection = () => (
               </div>
 
               {/* Visual card */}
-              <div className={`${d.bg} rounded-3xl aspect-[4/3] overflow-hidden flex items-center justify-center`}>
+              <div className={`${d.bg} rounded-3xl aspect-[4/3] overflow-hidden flex items-center justify-center w-[70%] ${reverse ? "mr-auto" : "ml-auto"}`}>
                 {d.img ? (
                   <img
                     src={d.img}
