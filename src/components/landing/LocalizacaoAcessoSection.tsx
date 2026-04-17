@@ -19,11 +19,11 @@ const LocalizacaoAcessoSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Tempos de acesso */}
         <div className="rounded-2xl border border-border bg-card p-10 lg:p-12 flex flex-col">
-          <ul className="flex flex-col gap-4 mb-8">
+          <ul className="flex flex-col gap-5 mb-8">
             {TEMPOS.map((item) => (
-              <li key={item} className="flex gap-3 items-start">
-                <Clock className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                <span className="text-sm text-foreground leading-[1.6]">{item}</span>
+              <li key={item} className="flex gap-4 items-start">
+                <Clock className="w-6 h-6 text-primary shrink-0 mt-0.5" />
+                <span className="text-lg md:text-xl text-foreground leading-[1.5]">{item}</span>
               </li>
             ))}
           </ul>
