@@ -1,4 +1,5 @@
 import heroImage from "@/assets/hero-aerodrome.jpg";
+import iphoneMockup from "@/assets/hero-iphone-mockup.png";
 
 const HeroSection = () => (
   <section className="min-h-screen relative overflow-hidden flex flex-col justify-end px-[6%] pb-[72px]">
@@ -9,13 +10,19 @@ const HeroSection = () => (
     <div className="absolute inset-0 bg-gradient-to-t from-black/[0.88] via-black/45 to-black/20" />
     <div className="absolute left-[6%] top-0 bottom-0 w-[2px] bg-primary/20" />
 
+    <img
+      src={iphoneMockup}
+      alt="iPhone exibindo o aeródromo Diplomata SS8X"
+      width={1024}
+      height={1280}
+      className="hidden md:block absolute right-0 bottom-0 w-[42%] max-w-[640px] object-contain pointer-events-none select-none z-10"
+    />
 
-
-    <div className="relative max-w-[1100px] mx-0 my-[230px]">
+    <div className="relative z-20 max-w-[1100px] mx-0 my-[230px]">
       <h1 className="text-[60px] leading-[0.9] text-primary-foreground tracking-[0.03em] mb-7 font-sans font-extrabold whitespace-nowrap md:text-sm">
         Diplomata <span className="text-primary">SS8X</span>
       </h1>
-      <p className="leading-[1.75] max-w-[1100px] px-0 py-0 my-0 mx-0 text-left pb-[2px] pr-[3px] mb-[34px] mr-px text-6xl font-bold text-primary-foreground">
+      <p className="leading-[1.75] max-w-[640px] px-0 py-0 my-0 mx-0 text-left pb-[2px] pr-[3px] mb-[34px] mr-px text-6xl font-bold text-primary-foreground">
         Aeródromo inteligente por assinatura
       </p>
       <div className="flex flex-col sm:flex-row gap-3.5">
