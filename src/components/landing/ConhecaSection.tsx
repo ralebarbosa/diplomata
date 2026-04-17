@@ -34,7 +34,7 @@ const ConhecaSection = () => (
                 <h3 className="font-sans font-bold text-3xl md:text-4xl leading-[1.15] tracking-[-0.01em] text-foreground mb-4">
                   {String(i + 1).padStart(2, "0")}. {d.title}
                 </h3>
-                <p className="text-base text-muted-foreground leading-[1.6] max-w-[480px]">
+                <p className="text-base text-muted-foreground leading-[1.6] max-w-[480px] mx-auto">
                   {d.desc}
                 </p>
               </div>
