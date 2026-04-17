@@ -1,14 +1,33 @@
 
-O usuário quer aproximar texto e imagem em `ConhecaSection.tsx` SEM aumentar a imagem. O espaço vazio vem de:
-1. Texto com `max-w-[480px]` dentro de uma coluna `md:col-span-8` (sobra muito espaço vazio à direita do texto)
-2. Gap entre colunas `md:gap-12`
+Objetivo: corrigir o desalinhamento horizontal da seção `ConhecaSection` para que o conjunto texto + imagem fique realmente centralizado dentro da largura da div, sem aumentar as imagens.
 
-Solução: manter a imagem no mesmo tamanho (`md:col-span-4`), mas reduzir a coluna de texto e empurrar a imagem para a esquerda. Vou usar `justify-self-start` na imagem com largura fixa, ou mais simples: reduzir a coluna do texto e o gap.
+Diagnóstico:
+- O problema não é só `text-center`.
+- Hoje cada linha usa `md:grid-cols-12`, mas o conteúdo ocupa apenas `5 + 4 = 9` colunas.
+- Sobram 3 colunas vazias à direita, o que cria a sensação de margem direita maior e deixa o bloco visualmente deslocado.
 
-## Mudanças em `src/components/landing/ConhecaSection.tsx`
+Plano de ajuste:
+1. Em `src/components/landing/ConhecaSection.tsx`, substituir o grid de 12 colunas por uma estrutura de 2 colunas reais no desktop.
+2. Definir larguras controladas para texto e imagem, com `justify-center`, para centralizar o conjunto inteiro na linha.
+3. Manter o layout mobile em 1 coluna como está hoje.
+4. Preservar o tamanho visual da imagem, sem ampliar o card.
+5. Garantir que título, descrição e imagem continuem centralizados dentro de cada coluna.
 
-**Linha 41** — grid: trocar `gap-8 md:gap-12` por `gap-6 md:gap-6` para reduzir o espaçamento entre colunas.
+Como vou estruturar:
+- Trocar algo como:
+  - `md:grid-cols-12`
+  - `md:col-span-5`
+  - `md:col-span-4`
+- Por uma linha com colunas desktop do tipo:
+  - texto com largura fixa/máxima
+  - imagem com largura fixa/máxima
+  - `md:justify-center` para centralizar o bloco completo
 
-**Linha 45** — coluna do texto: trocar `md:col-span-8` por `md:col-span-5` para encolher a coluna do texto, fazendo a imagem ficar imediatamente ao lado do texto (a imagem mantém `md:col-span-4`, mesmo tamanho).
+Resultado esperado:
+- a distância entre a margem esquerda e o conteúdo ficará equivalente à distância da margem direita
+- texto e imagem continuarão próximos
+- a imagem não aumentará
+- a seção ficará visualmente centralizada dentro do container
 
-Resultado: texto e imagem ficam visualmente próximos, e a imagem mantém exatamente o mesmo tamanho atual (4/12 colunas).
+Detalhe técnico:
+A solução mais estável aqui é abandonar a lógica de “12 colunas com sobras” nessa seção específica e usar um grid/flex de 2 colunas centralizado, porque isso elimina o espaço residual que hoje empurra o conteúdo visualmente para a esquerda.
