@@ -32,6 +32,10 @@ const AerodromoTecnologiaSection = () => (
           </div>
         </div>
       </div>
+
+      <h2 className="font-display text-3xl md:text-5xl tracking-[0.02em] text-foreground font-bold text-center mt-12 max-w-3xl mx-auto leading-tight">
+        A junção de Aeródromo <span className="text-primary">+</span> Tecnologia para transformar e viabilizar sua operação
+      </h2>
     </div>
   </section>
 );
