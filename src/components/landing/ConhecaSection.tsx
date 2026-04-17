@@ -37,8 +37,8 @@ const ConhecaSection = () => (
             >
               {/* Text */}
               <div
-                className={`md:col-span-7 ${
-                  reverse ? "md:order-2 md:col-start-6" : "md:order-1"
+                className={`md:col-span-8 ${
+                  reverse ? "md:order-2 md:col-start-5" : "md:order-1"
                 }`}
               >
                 <h3 className="font-sans font-light text-3xl md:text-4xl leading-[1.15] tracking-[-0.01em] text-foreground mb-4">
@@ -51,7 +51,7 @@ const ConhecaSection = () => (
 
               {/* Visual */}
               <div
-                className={`md:col-span-5 ${
+                className={`md:col-span-4 ${
                   reverse ? "md:order-1 md:col-start-1" : "md:order-2"
                 }`}
               >
