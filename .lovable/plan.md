@@ -1,14 +1,21 @@
 
-Vou diminuir o zoom do iframe do Google Maps na seção "Localização" para mostrar uma área maior do entorno.
+Vou alterar a tipografia do site de **Mulish** para **Inter** em todos os textos (títulos e corpo).
 
-## Mudança
+### Alterações
 
-Em `src/components/landing/LocalizacaoSection.tsx`, alterar o parâmetro `z=16` para `z=13` na URL do iframe. Isso reduz o nível de zoom, exibindo uma visão mais ampla da região (BR-050 e arredores) ao invés de focar apenas no ponto exato.
+**1. `src/index.css`**
+- Trocar o `@import` do Google Fonts de `Mulish` para `Inter` (pesos 300-900).
+- Atualizar a utility `.font-display` para usar `Inter`.
 
+**2. `tailwind.config.ts`**
+- Atualizar `fontFamily.sans` e `fontFamily.display` de `Mulish` para `Inter`.
+
+```ts
+fontFamily: {
+  sans: ['Inter', 'sans-serif'],
+  display: ['Inter', 'sans-serif'],
+}
 ```
-src="https://www.google.com/maps?q=-19.416115,-48.071437&z=13&t=k&output=embed"
-```
 
-O pin vermelho continua marcando as coordenadas exatas do aeródromo, mas com mais contexto geográfico visível ao redor.
-
-Nenhum outro elemento da seção será alterado.
+### Resultado
+Todo o site (Hero, títulos de seção, corpo, navbar, footer) passará a usar Inter automaticamente, já que todos os componentes consomem `font-sans` (default) ou `font-display` via Tailwind. Nenhum componente precisa ser editado individualmente.
