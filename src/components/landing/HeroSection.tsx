@@ -18,11 +18,11 @@ const HeroSection = () => (
       className="absolute right-0 md:right-[2%] top-[8%] md:top-[12%] w-[70%] max-w-[320px] md:w-[42%] md:max-w-[560px] object-contain pointer-events-none select-none z-10 opacity-90 md:opacity-100"
     />
 
-    <div className="relative z-20 max-w-[1100px] mx-0 my-[230px]">
-      <h1 className="text-[60px] leading-[0.9] text-primary-foreground tracking-[0.03em] mb-7 font-sans font-extrabold whitespace-nowrap md:text-sm">
+    <div className="relative z-20 max-w-[1100px] mx-0 my-[140px] md:my-[230px]">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.9] text-primary-foreground tracking-[0.03em] mb-5 md:mb-7 font-sans font-extrabold">
         Diplomata <span className="text-primary">SS8X</span>
       </h1>
-      <p className="leading-[1.75] max-w-[640px] px-0 py-0 my-0 mx-0 text-left pb-[2px] pr-[3px] mb-[34px] mr-px text-6xl font-bold text-primary-foreground">
+      <p className="leading-[1.2] md:leading-[1.75] max-w-[640px] text-left mb-8 md:mb-[34px] text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground">
         Aeródromo inteligente por assinatura
       </p>
       <div className="flex flex-col sm:flex-row gap-3.5">
