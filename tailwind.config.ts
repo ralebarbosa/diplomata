@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Mulish', 'sans-serif'],
-        display: ['Mulish', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+        display: ['Inter', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
