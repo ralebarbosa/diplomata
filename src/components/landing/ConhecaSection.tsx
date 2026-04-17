@@ -8,48 +8,66 @@ import patioImg from "@/assets/diferencial-patio.jpg";
 import hangaragemImg from "@/assets/diferencial-hangaragem.jpg";
 import hangaresImg from "@/assets/diferencial-hangares.jpg";
 
-const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: string }> = [
-  { title: "Câmera de Meteorologia", desc: "Monitoramento meteorológico em tempo real.", imgAlt: "Meteorologia", img: meteorologiaImg },
-  { title: "Tanque de Combustível", desc: "Tanque próprio para abastecimento de aeronaves.", imgAlt: "Tanque", img: tanqueImg },
-  { title: "Sistema de Segurança", desc: "Vigilância 24h e controle de acesso.", imgAlt: "Segurança", img: segurancaImg },
-  { title: "Operador para Apoio", desc: "Equipe de apoio dedicada ao piloto.", imgAlt: "Operador", img: operadorImg },
-  { title: "App Multifunção", desc: "Aplicativo para gestão e comunicação.", imgAlt: "App" },
-  { title: "Pátio para Aeronaves", desc: "Pátio amplo para estacionamento.", imgAlt: "Pátio", img: patioImg },
-  { title: "Hangaragem", desc: "Hangaragem coberta para sua aeronave.", imgAlt: "Hangaragem", img: hangaragemImg },
-  { title: "Espaço para Hangares", desc: "Lotes disponíveis para construção de hangares.", imgAlt: "Hangares", img: hangaresImg },
+const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: string; bg: string }> = [
+  { title: "Câmera de Meteorologia", desc: "Monitoramento meteorológico em tempo real, permitindo acompanhamento das condições de voo a qualquer momento.", imgAlt: "Meteorologia", img: meteorologiaImg, bg: "bg-[hsl(40,40%,92%)]" },
+  { title: "Tanque de Combustível", desc: "Tanque próprio para abastecimento de aeronaves com agilidade e segurança em todas as operações.", imgAlt: "Tanque", img: tanqueImg, bg: "bg-[hsl(35,35%,88%)]" },
+  { title: "Sistema de Segurança", desc: "Vigilância 24h e controle de acesso garantindo a proteção total da sua aeronave e do patrimônio.", imgAlt: "Segurança", img: segurancaImg, bg: "bg-[hsl(45,45%,90%)]" },
+  { title: "Operador para Apoio", desc: "Equipe de apoio dedicada ao piloto, oferecendo suporte completo antes, durante e após cada operação.", imgAlt: "Operador", img: operadorImg, bg: "bg-[hsl(30,25%,90%)]" },
+  { title: "App Multifunção", desc: "Aplicativo para gestão e comunicação, centralizando todas as informações e serviços do aeródromo.", imgAlt: "App", bg: "bg-[hsl(40,30%,93%)]" },
+  { title: "Pátio para Aeronaves", desc: "Pátio amplo para estacionamento de aeronaves com manobra confortável e organizada.", imgAlt: "Pátio", img: patioImg, bg: "bg-[hsl(38,38%,89%)]" },
+  { title: "Hangaragem", desc: "Hangaragem coberta para sua aeronave, protegendo contra intempéries e prolongando a vida útil do equipamento.", imgAlt: "Hangaragem", img: hangaragemImg, bg: "bg-[hsl(42,32%,91%)]" },
+  { title: "Espaço para Hangares", desc: "Lotes disponíveis para construção de hangares próprios, com infraestrutura completa e localização privilegiada.", imgAlt: "Hangares", img: hangaresImg, bg: "bg-[hsl(36,28%,87%)]" },
 ];
 
 const ConhecaSection = () => (
-  <section id="conheca" className="py-20 px-[6%] bg-background">
-    <div className="max-w-[1100px] mx-auto">
-      <SectionLabel>Estrutura</SectionLabel>
-      <SectionTitle>CONHEÇA O DIPLOMATA</SectionTitle>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {DIFERENCIAIS.map((d, i) => (
-          <div key={i}>
-            {d.img ? (
-              <div className="w-full aspect-[4/3] overflow-hidden rounded-sm mb-3.5">
-                <img
-                  src={d.img}
-                  alt={d.imgAlt}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
+  <section id="conheca" className="py-24 px-[6%] bg-background">
+    <div className="max-w-[1200px] mx-auto">
+      <div className="text-center mb-20">
+        <SectionLabel>Estrutura</SectionLabel>
+        <SectionTitle>CONHEÇA O DIPLOMATA</SectionTitle>
+      </div>
+
+      <div className="flex flex-col gap-24 md:gap-32">
+        {DIFERENCIAIS.map((d, i) => {
+          const reverse = i % 2 === 1;
+          return (
+            <div
+              key={i}
+              className={`grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center ${
+                reverse ? "md:[&>*:first-child]:order-2" : ""
+              }`}
+            >
+              {/* Text */}
+              <div className={reverse ? "md:pl-8" : "md:pr-8"}>
+                <h3 className="font-sans font-light text-3xl md:text-5xl leading-[1.1] tracking-[-0.01em] text-foreground mb-6">
+                  {d.title}
+                </h3>
+                <p className="text-base md:text-lg text-muted-foreground leading-[1.7] max-w-[480px]">
+                  {d.desc}
+                </p>
               </div>
-            ) : (
-              <div className="w-full aspect-[4/3] bg-accent border border-dashed border-muted-foreground/30 rounded-sm flex flex-col items-center justify-center gap-1.5 mb-3.5">
-                <span className="text-[22px] opacity-25">🖼</span>
-                <span className="text-[10px] text-muted-foreground tracking-[0.08em] text-center leading-[1.5]">
-                  Imagem
-                  <br />
-                  {d.imgAlt}
-                </span>
+
+              {/* Visual card */}
+              <div className={`${d.bg} rounded-3xl aspect-[4/3] overflow-hidden flex items-center justify-center`}>
+                {d.img ? (
+                  <img
+                    src={d.img}
+                    alt={d.imgAlt}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="flex flex-col items-center justify-center gap-2 opacity-40">
+                    <span className="text-5xl">🖼</span>
+                    <span className="text-xs text-muted-foreground tracking-[0.08em] uppercase">
+                      {d.imgAlt}
+                    </span>
+                  </div>
+                )}
               </div>
-            )}
-            <h3 className="text-sm font-semibold text-foreground mb-1">{d.title}</h3>
-            <p className="text-[13px] text-muted-foreground leading-[1.6]">{d.desc}</p>
-          </div>
-        ))}
+            </div>
+          );
+        })}
       </div>
     </div>
   </section>
