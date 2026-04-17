@@ -15,7 +15,7 @@ const HeroSection = () => (
       alt="iPhone exibindo o aeródromo Diplomata SS8X"
       width={1024}
       height={1280}
-      className="hidden md:block absolute right-0 bottom-0 w-[42%] max-w-[640px] object-contain pointer-events-none select-none z-10"
+      className="absolute right-0 md:right-[2%] top-[8%] md:top-[12%] w-[70%] max-w-[320px] md:w-[42%] md:max-w-[560px] object-contain pointer-events-none select-none z-10 opacity-90 md:opacity-100"
     />
 
     <div className="relative z-20 max-w-[1100px] mx-0 my-[230px]">
