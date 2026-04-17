@@ -33,12 +33,12 @@ const ConhecaSection = () => (
           return (
             <div
               key={i}
-              className={`grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center ${
+              className={`grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center ${
                 reverse ? "md:[&>*:first-child]:order-2" : ""
               }`}
             >
               {/* Text */}
-              <div className={reverse ? "md:pl-8" : "md:pr-8"}>
+              <div className={reverse ? "md:pl-2" : "md:pr-2"}>
                 <h3 className="font-sans font-light text-3xl md:text-5xl leading-[1.1] tracking-[-0.01em] text-foreground mb-6">
                   {d.title}
                 </h3>
@@ -48,7 +48,7 @@ const ConhecaSection = () => (
               </div>
 
               {/* Visual card */}
-              <div className={`${d.bg} rounded-3xl aspect-[4/3] overflow-hidden flex items-center justify-center w-[70%] ${reverse ? "mr-auto" : "ml-auto"}`}>
+              <div className={`${d.bg} rounded-3xl aspect-[4/3] overflow-hidden flex items-center justify-center w-[70%] ${reverse ? "mr-0" : "ml-0"}`}>
                 {d.img ? (
                   <img
                     src={d.img}
