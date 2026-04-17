@@ -21,13 +21,13 @@ const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: s
 
 const ConhecaSection = () => (
   <section id="conheca" className="py-20 px-[6%] bg-background">
-    <div className="max-w-[1200px] py-0 my-0 mx-0 px-0">
+    <div className="max-w-[1200px] mx-auto">
       <div className="flex flex-col gap-20 md:gap-24">
         {DIFERENCIAIS.map((d, i) => {
           return (
             <div
               key={i}
-              className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-6 items-center"
+              className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-6 items-center justify-items-center text-center"
             >
               {/* Text */}
               <div className="md:col-span-5">
