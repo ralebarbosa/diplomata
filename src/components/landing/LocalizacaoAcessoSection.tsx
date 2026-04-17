@@ -19,12 +19,6 @@ const LocalizacaoAcessoSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Tempos de acesso */}
         <div className="rounded-2xl border border-border bg-card p-10 lg:p-12 flex flex-col">
-          <h3 className="font-display text-3xl tracking-[0.02em] text-foreground font-bold mb-3">
-            Tempos de Acesso
-          </h3>
-          <p className="text-muted-foreground text-sm mb-8">
-            A partir das principais cidades da região
-          </p>
           <ul className="flex flex-col gap-4 mb-8">
             {TEMPOS.map((item) => (
               <li key={item} className="flex gap-3 items-start">
