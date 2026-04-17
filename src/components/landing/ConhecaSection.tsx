@@ -20,50 +20,58 @@ const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: s
 ];
 
 const ConhecaSection = () => (
-  <section id="conheca" className="py-16 px-[6%] bg-background">
+  <section id="conheca" className="py-20 px-[6%] bg-background">
     <div className="max-w-[1200px] mx-auto">
-      <div className="text-center mb-12">
+      <div className="text-center mb-16">
         <SectionLabel>Estrutura</SectionLabel>
         <SectionTitle>CONHEÇA O DIPLOMATA</SectionTitle>
       </div>
 
-      <div className="flex flex-col gap-14 md:gap-16">
+      <div className="flex flex-col gap-20 md:gap-24">
         {DIFERENCIAIS.map((d, i) => {
           const reverse = i % 2 === 1;
           return (
             <div
               key={i}
-              className={`grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 items-center ${
-                reverse ? "md:[&>*:first-child]:order-2" : ""
-              }`}
+              className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center"
             >
               {/* Text */}
-              <div className={reverse ? "md:pl-1" : "md:pr-1"}>
-                <h3 className="font-sans font-light text-2xl md:text-3xl leading-[1.15] tracking-[-0.01em] text-foreground mb-3">
+              <div
+                className={`md:col-span-7 ${
+                  reverse ? "md:order-2 md:col-start-6" : "md:order-1"
+                }`}
+              >
+                <h3 className="font-sans font-light text-3xl md:text-4xl leading-[1.15] tracking-[-0.01em] text-foreground mb-4">
                   {d.title}
                 </h3>
-                <p className="text-sm md:text-base text-muted-foreground leading-[1.6]">
+                <p className="text-base text-muted-foreground leading-[1.6] max-w-[480px]">
                   {d.desc}
                 </p>
               </div>
 
-              {/* Visual card */}
-              <div className={`${d.bg} rounded-2xl aspect-[4/3] overflow-hidden flex items-center justify-center w-full`}>
-                {d.img ? (
-                  <img
-                    src={d.img}
-                    alt={d.imgAlt}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                ) : (
-                  <div className="flex flex-col items-center justify-center gap-2 opacity-40">
-                    <span className="text-4xl">🖼</span>
-                    <span className="text-[10px] text-muted-foreground tracking-[0.08em] uppercase">
-                      {d.imgAlt}
-                    </span>
-                  </div>
-                )}
+              {/* Visual */}
+              <div
+                className={`md:col-span-5 ${
+                  reverse ? "md:order-1 md:col-start-1" : "md:order-2"
+                }`}
+              >
+                <div className="rounded-xl aspect-[4/3] overflow-hidden flex items-center justify-center w-full bg-muted">
+                  {d.img ? (
+                    <img
+                      src={d.img}
+                      alt={d.imgAlt}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="flex flex-col items-center justify-center gap-2 opacity-40">
+                      <span className="text-4xl">🖼</span>
+                      <span className="text-[10px] text-muted-foreground tracking-[0.08em] uppercase">
+                        {d.imgAlt}
+                      </span>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           );
