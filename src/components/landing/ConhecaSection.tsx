@@ -29,18 +29,13 @@ const ConhecaSection = () => (
 
       <div className="flex flex-col gap-20 md:gap-24">
         {DIFERENCIAIS.map((d, i) => {
-          const reverse = i % 2 === 1;
           return (
             <div
               key={i}
               className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center"
             >
               {/* Text */}
-              <div
-                className={`md:col-span-8 ${
-                  reverse ? "md:order-2 md:col-start-5" : "md:order-1"
-                }`}
-              >
+              <div className="md:col-span-8">
                 <h3 className="font-sans font-light text-3xl md:text-4xl leading-[1.15] tracking-[-0.01em] text-foreground mb-4">
                   {d.title}
                 </h3>
@@ -50,11 +45,7 @@ const ConhecaSection = () => (
               </div>
 
               {/* Visual */}
-              <div
-                className={`md:col-span-4 ${
-                  reverse ? "md:order-1 md:col-start-1" : "md:order-2"
-                }`}
-              >
+              <div className="md:col-span-4">
                 <div className="rounded-xl aspect-[4/3] overflow-hidden flex items-center justify-center w-full bg-muted">
                   {d.img ? (
                     <img
