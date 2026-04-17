@@ -1,20 +1,9 @@
 
-The user wants to reduce the white space between the text column and the image column in each row of the `ConhecaSection`.
+O `<p>` selecionado já tem `max-w-[820px]`, mas está limitado pelo container pai `max-w-[820px]` na linha 14. Vou aumentar ambos para dar mais largura ao texto.
 
-Currently, the grid uses:
-- `grid-cols-12` with text on `md:col-span-8` and image on `md:col-span-4`
-- Gap: `gap-8 md:gap-12`
-- Text has `max-w-[480px]` which leaves extra empty space on the right side of the text column before the image starts
+## Mudanças em `src/components/landing/HeroSection.tsx`
 
-The white space comes from two sources:
-1. The `gap-12` between columns on desktop
-2. The text column being 8/12 wide while the text itself is capped at 480px, creating empty space inside that column
+1. **Linha 14** — container pai: trocar `max-w-[820px]` por `max-w-[1100px]`.
+2. **Linha 18** — parágrafo: trocar `max-w-[820px]` por `max-w-[1100px]`.
 
-**Plan:**
-
-1. In `src/components/landing/ConhecaSection.tsx`:
-   - Reduce the grid gap from `md:gap-12` to `md:gap-6`
-   - Rebalance the columns: change text from `md:col-span-8` to `md:col-span-7` and image from `md:col-span-4` to `md:col-span-5` so the image sits closer to the text and is slightly larger
-   - Optionally tighten the text `max-w-[480px]` to `max-w-[520px]` so the text fills its column more naturally before the gap
-
-This keeps the same overall layout concept while visibly reducing the empty gap between text and image.
+Isso permite que o texto "O seu aeródromo alternativo do Triângulo Mineiro..." ocupe mais largura horizontal antes de quebrar em nova linha.
