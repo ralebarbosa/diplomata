@@ -1,21 +1,9 @@
 
-Vou alterar a tipografia do site de **Mulish** para **Inter** em todos os textos (títulos e corpo).
+O `<p>` selecionado já tem `max-w-[820px]`, mas está limitado pelo container pai `max-w-[820px]` na linha 14. Vou aumentar ambos para dar mais largura ao texto.
 
-### Alterações
+## Mudanças em `src/components/landing/HeroSection.tsx`
 
-**1. `src/index.css`**
-- Trocar o `@import` do Google Fonts de `Mulish` para `Inter` (pesos 300-900).
-- Atualizar a utility `.font-display` para usar `Inter`.
+1. **Linha 14** — container pai: trocar `max-w-[820px]` por `max-w-[1100px]`.
+2. **Linha 18** — parágrafo: trocar `max-w-[820px]` por `max-w-[1100px]`.
 
-**2. `tailwind.config.ts`**
-- Atualizar `fontFamily.sans` e `fontFamily.display` de `Mulish` para `Inter`.
-
-```ts
-fontFamily: {
-  sans: ['Inter', 'sans-serif'],
-  display: ['Inter', 'sans-serif'],
-}
-```
-
-### Resultado
-Todo o site (Hero, títulos de seção, corpo, navbar, footer) passará a usar Inter automaticamente, já que todos os componentes consomem `font-sans` (default) ou `font-display` via Tailwind. Nenhum componente precisa ser editado individualmente.
+Isso permite que o texto "O seu aeródromo alternativo do Triângulo Mineiro..." ocupe mais largura horizontal antes de quebrar em nova linha.
