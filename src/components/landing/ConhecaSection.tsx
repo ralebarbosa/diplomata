@@ -22,11 +22,6 @@ const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: s
 const ConhecaSection = () => (
   <section id="conheca" className="py-20 px-[6%] bg-background">
     <div className="max-w-[1200px] py-0 my-0 mx-0 px-0">
-      <div className="text-center mb-16">
-        <SectionLabel>Estrutura</SectionLabel>
-        <SectionTitle>CONHEÇA O DIPLOMATA</SectionTitle>
-      </div>
-
       <div className="flex flex-col gap-20 md:gap-24">
         {DIFERENCIAIS.map((d, i) => {
           return (
