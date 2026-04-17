@@ -18,12 +18,12 @@ const Index = () => (
     <Navbar />
     <HeroSection />
     <DestaqueSection />
-    <PistaSection />
     <ConhecaSection />
     <ProjetoArquitetonicoSection />
     
       <EventosSection />
       <StatusObraSection />
+    <PistaSection />
     <LocalizacaoSection />
     <GaleriaSection />
     <CTASection />
