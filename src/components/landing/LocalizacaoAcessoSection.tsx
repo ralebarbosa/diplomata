@@ -8,6 +8,7 @@ const TEMPOS = [
 ];
 
 const LocalizacaoAcessoSection = () => (
+  // Localização e Acesso
   <section id="localizacao-acesso" className="py-20 px-[6%] bg-background">
     <div className="max-w-[1100px] mx-auto">
       <h2 className="font-display text-3xl md:text-5xl tracking-[0.02em] text-foreground font-bold text-center mb-3">
