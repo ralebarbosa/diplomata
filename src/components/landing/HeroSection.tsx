@@ -10,7 +10,7 @@ const HeroSection = () => (
     <div className="absolute inset-0 bg-gradient-to-t from-black/[0.88] via-black/45 to-black/20 mx-0" />
     <div className="absolute left-[6%] top-0 bottom-0 w-[2px] bg-primary/20" />
 
-    <div className="relative z-20 w-full max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 md:gap-12 items-center">
+    <div className="relative z-20 w-full max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 md:gap-24 lg:gap-32 items-center md:pr-[8%] lg:pr-[15%]">
       <div className="max-w-[640px]">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.9] text-primary-foreground tracking-[0.03em] mb-5 md:mb-7 font-sans font-extrabold">
           Diplomata <span className="text-primary">SS8X</span>
