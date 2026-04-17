@@ -11,7 +11,7 @@ const HeroSection = () => (
 
 
 
-    <div className="relative max-w-[1100px]">
+    <div className="relative max-w-[1100px] mx-0 my-[230px]">
       <h1 className="text-[60px] leading-[0.9] text-primary-foreground tracking-[0.03em] mb-7 font-sans font-extrabold whitespace-nowrap md:text-sm">
         DIPLOMATA <span className="text-primary">SS8X</span>
       </h1>
