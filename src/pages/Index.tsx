@@ -4,7 +4,7 @@ import DestaqueSection from "@/components/landing/DestaqueSection";
 import PistaSection from "@/components/landing/PistaSection";
 import ConhecaSection from "@/components/landing/ConhecaSection";
 import ProjetoArquitetonicoSection from "@/components/landing/ProjetoArquitetonicoSection";
-
+import PlanosSection from "@/components/landing/PlanosSection";
 import EventosSection from "@/components/landing/EventosSection";
 import StatusObraSection from "@/components/landing/StatusObraSection";
 import LocalizacaoSection from "@/components/landing/LocalizacaoSection";
@@ -20,9 +20,9 @@ const Index = () => (
     <DestaqueSection />
     <ConhecaSection />
     <ProjetoArquitetonicoSection />
-    
-      <EventosSection />
-      <StatusObraSection />
+    <PlanosSection />
+    <EventosSection />
+    <StatusObraSection />
     <PistaSection />
     <LocalizacaoSection />
     <GaleriaSection />
