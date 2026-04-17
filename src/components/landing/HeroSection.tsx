@@ -12,10 +12,8 @@ const HeroSection = () => (
 
 
     <div className="relative max-w-[820px]">
-      <h1 className="text-[60px] md:text-[100px] leading-[0.9] text-primary-foreground tracking-[0.03em] mb-7 font-sans font-extrabold">
-        DIPLOMATA
-        <br />
-        <span className="text-primary">SS8X</span>
+      <h1 className="text-[60px] md:text-[100px] leading-[0.9] text-primary-foreground tracking-[0.03em] mb-7 font-sans font-extrabold whitespace-nowrap">
+        DIPLOMATA <span className="text-primary">SS8X</span>
       </h1>
       <p className="text-base text-primary-foreground/50 leading-[1.75] max-w-[480px] mb-11 font-light">
         O seu aeródromo alternativo do Triângulo Mineiro, com hangaragem, pátio e arrendamento
