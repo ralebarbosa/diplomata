@@ -21,8 +21,8 @@ const LocalizacaoAcessoSection = () => (
         <div className="rounded-2xl border border-border bg-card p-10 lg:p-12 flex flex-col">
           <div className="flex gap-3 items-start pb-6 mb-8 border-b border-border">
             <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-            <span className="text-sm text-foreground leading-[1.6] font-semibold">
-              Acesso exclusivo direto pela beira da rodovia!
+            <span className="text-foreground leading-[1.6] font-bold text-xl">
+              Acesso exclusivo pela beira da rodovia. Apenas 1km de estrada de terra.
             </span>
           </div>
           <ul className="flex flex-col gap-5">
