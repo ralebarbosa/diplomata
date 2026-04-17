@@ -27,10 +27,10 @@ const ConhecaSection = () => (
           return (
             <div
               key={i}
-              className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-6 items-center justify-items-center text-center"
+              className="flex flex-col md:flex-row md:justify-center items-center gap-6 md:gap-6 text-center"
             >
               {/* Text */}
-              <div className="md:col-span-5">
+              <div className="w-full md:w-[420px] flex-shrink-0">
                 <h3 className="font-sans font-bold text-3xl md:text-4xl leading-[1.15] tracking-[-0.01em] text-foreground mb-4">
                   {String(i + 1).padStart(2, "0")}. {d.title}
                 </h3>
@@ -40,7 +40,7 @@ const ConhecaSection = () => (
               </div>
 
               {/* Visual */}
-              <div className="md:col-span-4">
+              <div className="w-full md:w-[340px] flex-shrink-0">
                 <div className="rounded-xl aspect-[4/3] overflow-hidden flex items-center justify-center w-full bg-muted">
                   {d.img ? (
                     <img
