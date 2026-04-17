@@ -11,6 +11,7 @@ import StatusObraSection from "@/components/landing/StatusObraSection";
 import LocalizacaoSection from "@/components/landing/LocalizacaoSection";
 import GaleriaSection from "@/components/landing/GaleriaSection";
 import CTASection from "@/components/landing/CTASection";
+import AerodromoTecnologiaSection from "@/components/landing/AerodromoTecnologiaSection";
 import ContatoSection from "@/components/landing/ContatoSection";
 import Footer from "@/components/landing/Footer";
 
@@ -19,6 +20,7 @@ const Index = () => (
     <Navbar />
     <HeroSection />
     <DestaqueSection />
+    <AerodromoTecnologiaSection />
     <ConhecaSection />
     <PlanosSection />
     <LocalizacaoAcessoSection />
