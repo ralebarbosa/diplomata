@@ -1,5 +1,3 @@
-import SectionLabel from "./SectionLabel";
-import SectionTitle from "./SectionTitle";
 import galeria01 from "@/assets/galeria-01.png";
 import galeria02 from "@/assets/galeria-02.png";
 import galeria03 from "@/assets/galeria-03.jpeg";
@@ -22,19 +20,18 @@ const fotos = [
 
 const GaleriaSection = () => (
   <section id="galeria" className="py-20 px-[6%] bg-background">
-    <div className="max-w-[1200px] mx-auto">
-      <SectionLabel>Registros</SectionLabel>
-      <SectionTitle>GALERIA DE FOTOS</SectionTitle>
-
-      <p className="text-base md:text-lg text-muted-foreground leading-[1.7] max-w-3xl mb-12">
-        Confira momentos e aeronaves que já passaram pelo Aeródromo Diplomata.
+    <div className="max-w-[1100px] mx-auto">
+      <h2 className="font-display text-3xl md:text-5xl tracking-[0.02em] text-foreground font-bold text-center mb-3">
+        Galeria de Fotos
+      </h2>
+      <p className="text-muted-foreground text-center text-base md:text-lg mb-12">
+        Confira momentos e aeronaves que já passaram pelo Aeródromo Diplomata
       </p>
-
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
         {fotos.map((foto, idx) => (
           <div
             key={idx}
-            className="group relative overflow-hidden rounded-sm bg-muted border border-border aspect-square shadow-sm hover:shadow-lg transition-shadow"
+            className="group relative overflow-hidden rounded-2xl bg-muted border border-border aspect-square shadow-sm hover:shadow-lg transition-shadow"
           >
             <img
               src={foto.src}
