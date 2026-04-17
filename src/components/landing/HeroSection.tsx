@@ -15,9 +15,8 @@ const HeroSection = () => (
       <h1 className="text-[60px] leading-[0.9] text-primary-foreground tracking-[0.03em] mb-7 font-sans font-extrabold whitespace-nowrap md:text-sm">
         DIPLOMATA <span className="text-primary">SS8X</span>
       </h1>
-      <p className="text-primary-foreground/50 leading-[1.75] max-w-[1100px] font-light text-5xl px-0 py-0 my-0 mx-0 text-left pb-[2px] pr-[3px] mb-[34px] mr-px">
-        O seu aeródromo alternativo do Triângulo Mineiro, com hangaragem, pátio e arrendamento
-        de lotes
+      <p className="leading-[1.75] max-w-[1100px] px-0 py-0 my-0 mx-0 text-left pb-[2px] pr-[3px] mb-[34px] mr-px text-6xl font-bold text-primary-foreground">
+        Aeródromo inteligente por assinatura
       </p>
       <div className="flex flex-col sm:flex-row gap-3.5">
         <a
