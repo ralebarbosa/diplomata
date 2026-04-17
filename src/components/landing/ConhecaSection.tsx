@@ -36,8 +36,8 @@ const ConhecaSection = () => (
             >
               {/* Text */}
               <div className="md:col-span-8">
-                <h3 className="font-sans font-light text-3xl md:text-4xl leading-[1.15] tracking-[-0.01em] text-foreground mb-4">
-                  {d.title}
+                <h3 className="font-sans font-bold text-3xl md:text-4xl leading-[1.15] tracking-[-0.01em] text-foreground mb-4">
+                  {String(i + 1).padStart(2, "0")}. {d.title}
                 </h3>
                 <p className="text-base text-muted-foreground leading-[1.6] max-w-[480px]">
                   {d.desc}
