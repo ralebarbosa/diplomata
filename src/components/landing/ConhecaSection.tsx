@@ -20,35 +20,35 @@ const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: s
 ];
 
 const ConhecaSection = () => (
-  <section id="conheca" className="py-24 px-[6%] bg-background">
+  <section id="conheca" className="py-16 px-[6%] bg-background">
     <div className="max-w-[1200px] mx-auto">
-      <div className="text-center mb-20">
+      <div className="text-center mb-12">
         <SectionLabel>Estrutura</SectionLabel>
         <SectionTitle>CONHEÇA O DIPLOMATA</SectionTitle>
       </div>
 
-      <div className="flex flex-col gap-24 md:gap-32">
+      <div className="flex flex-col gap-14 md:gap-16">
         {DIFERENCIAIS.map((d, i) => {
           const reverse = i % 2 === 1;
           return (
             <div
               key={i}
-              className={`grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center ${
+              className={`grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 items-center ${
                 reverse ? "md:[&>*:first-child]:order-2" : ""
               }`}
             >
               {/* Text */}
-              <div className={reverse ? "md:pl-2" : "md:pr-2"}>
-                <h3 className="font-sans font-light text-3xl md:text-5xl leading-[1.1] tracking-[-0.01em] text-foreground mb-6">
+              <div className={reverse ? "md:pl-1" : "md:pr-1"}>
+                <h3 className="font-sans font-light text-2xl md:text-3xl leading-[1.15] tracking-[-0.01em] text-foreground mb-3">
                   {d.title}
                 </h3>
-                <p className="text-base md:text-lg text-muted-foreground leading-[1.7]">
+                <p className="text-sm md:text-base text-muted-foreground leading-[1.6]">
                   {d.desc}
                 </p>
               </div>
 
               {/* Visual card */}
-              <div className={`${d.bg} rounded-3xl aspect-[4/3] overflow-hidden flex items-center justify-center w-full`}>
+              <div className={`${d.bg} rounded-2xl aspect-[4/3] overflow-hidden flex items-center justify-center w-full`}>
                 {d.img ? (
                   <img
                     src={d.img}
@@ -58,8 +58,8 @@ const ConhecaSection = () => (
                   />
                 ) : (
                   <div className="flex flex-col items-center justify-center gap-2 opacity-40">
-                    <span className="text-5xl">🖼</span>
-                    <span className="text-xs text-muted-foreground tracking-[0.08em] uppercase">
+                    <span className="text-4xl">🖼</span>
+                    <span className="text-[10px] text-muted-foreground tracking-[0.08em] uppercase">
                       {d.imgAlt}
                     </span>
                   </div>
