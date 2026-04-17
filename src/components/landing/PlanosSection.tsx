@@ -16,9 +16,12 @@ const ITEMS = [
 const PlanosSection = () => (
   <section id="planos" className="py-20 px-[6%] bg-background">
     <div className="max-w-[1100px] mx-auto">
-      <h2 className="font-display text-3xl md:text-5xl tracking-[0.02em] text-foreground font-bold text-center mb-12">
+      <h2 className="font-display text-3xl md:text-5xl tracking-[0.02em] text-foreground font-bold text-center mb-3">
         Planos e Valores
       </h2>
+      <p className="text-muted-foreground text-center text-base md:text-lg mb-12">
+        Aeronaves a pistão monomotoras e bimotoras e turbo-hélices
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Mensal */}
         <div className="rounded-2xl border border-border bg-card p-10 lg:p-12 flex flex-col">
