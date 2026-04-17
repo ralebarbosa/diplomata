@@ -13,7 +13,7 @@ const HeroSection = () => (
 
     <div className="relative max-w-[1100px] mx-0 my-[230px]">
       <h1 className="text-[60px] leading-[0.9] text-primary-foreground tracking-[0.03em] mb-7 font-sans font-extrabold whitespace-nowrap md:text-sm">
-        DIPLOMATA <span className="text-primary">SS8X</span>
+        Diplomata <span className="text-primary">SS8X</span>
       </h1>
       <p className="leading-[1.75] max-w-[1100px] px-0 py-0 my-0 mx-0 text-left pb-[2px] pr-[3px] mb-[34px] mr-px text-6xl font-bold text-primary-foreground">
         Aeródromo inteligente por assinatura
