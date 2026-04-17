@@ -23,13 +23,13 @@ const Index = () => (
     <AerodromoTecnologiaSection />
     <ConhecaSection />
     <PlanosSection />
-    <LocalizacaoAcessoSection />
-    <ProjetoArquitetonicoSection />
-    <EventosSection />
-    <StatusObraSection />
-    <PistaSection />
-    <LocalizacaoSection />
-    <GaleriaSection />
+      <LocalizacaoAcessoSection />
+      <GaleriaSection />
+      <ProjetoArquitetonicoSection />
+      <EventosSection />
+      <StatusObraSection />
+      <PistaSection />
+      <LocalizacaoSection />
     <CTASection />
     <ContatoSection />
     <Footer />
