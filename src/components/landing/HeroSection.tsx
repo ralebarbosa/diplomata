@@ -12,7 +12,7 @@ const HeroSection = () => (
 
 
     <div className="relative max-w-[820px]">
-      <h1 className="font-display text-[60px] md:text-[100px] leading-[0.9] text-primary-foreground tracking-[0.03em] mb-7">
+      <h1 className="text-[60px] md:text-[100px] leading-[0.9] text-primary-foreground tracking-[0.03em] mb-7 font-sans font-extrabold">
         DIPLOMATA
         <br />
         <span className="text-primary">SS8X</span>
