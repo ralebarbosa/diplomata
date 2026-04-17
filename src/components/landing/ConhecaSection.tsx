@@ -42,13 +42,13 @@ const ConhecaSection = () => (
                 <h3 className="font-sans font-light text-3xl md:text-5xl leading-[1.1] tracking-[-0.01em] text-foreground mb-6">
                   {d.title}
                 </h3>
-                <p className="text-base md:text-lg text-muted-foreground leading-[1.7] max-w-[480px]">
+                <p className="text-base md:text-lg text-muted-foreground leading-[1.7]">
                   {d.desc}
                 </p>
               </div>
 
               {/* Visual card */}
-              <div className={`${d.bg} rounded-3xl aspect-[4/3] overflow-hidden flex items-center justify-center w-[70%] ${reverse ? "mr-0" : "ml-0"}`}>
+              <div className={`${d.bg} rounded-3xl aspect-[4/3] overflow-hidden flex items-center justify-center w-full`}>
                 {d.img ? (
                   <img
                     src={d.img}
