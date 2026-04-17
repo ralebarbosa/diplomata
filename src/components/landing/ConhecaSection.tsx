@@ -27,20 +27,20 @@ const ConhecaSection = () => (
           return (
             <div
               key={i}
-              className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center"
+              className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-6 items-center"
             >
               {/* Text */}
-              <div className="md:col-span-8">
+              <div className="md:col-span-7">
                 <h3 className="font-sans font-bold text-3xl md:text-4xl leading-[1.15] tracking-[-0.01em] text-foreground mb-4">
                   {String(i + 1).padStart(2, "0")}. {d.title}
                 </h3>
-                <p className="text-base text-muted-foreground leading-[1.6] max-w-[480px]">
+                <p className="text-base text-muted-foreground leading-[1.6] max-w-[520px]">
                   {d.desc}
                 </p>
               </div>
 
               {/* Visual */}
-              <div className="md:col-span-4">
+              <div className="md:col-span-5">
                 <div className="rounded-xl aspect-[4/3] overflow-hidden flex items-center justify-center w-full bg-muted">
                   {d.img ? (
                     <img
