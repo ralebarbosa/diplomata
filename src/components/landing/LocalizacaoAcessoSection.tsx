@@ -19,7 +19,13 @@ const LocalizacaoAcessoSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Tempos de acesso */}
         <div className="rounded-2xl border border-border bg-card p-10 lg:p-12 flex flex-col">
-          <ul className="flex flex-col gap-5 mb-8">
+          <div className="flex gap-3 items-start pb-6 mb-8 border-b border-border">
+            <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+            <span className="text-sm text-foreground leading-[1.6] font-semibold">
+              Acesso exclusivo direto pela beira da rodovia!
+            </span>
+          </div>
+          <ul className="flex flex-col gap-5">
             {TEMPOS.map((item) => (
               <li key={item} className="flex gap-4 items-start">
                 <Clock className="w-6 h-6 text-primary shrink-0 mt-0.5" />
@@ -27,12 +33,6 @@ const LocalizacaoAcessoSection = () => (
               </li>
             ))}
           </ul>
-          <div className="mt-auto flex gap-3 items-start pt-6 border-t border-border">
-            <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-            <span className="text-sm text-foreground leading-[1.6] font-semibold">
-              Acesso exclusivo direto pela beira da rodovia!
-            </span>
-          </div>
         </div>
 
         {/* Google Maps */}
