@@ -1,9 +1,14 @@
 
-O `<p>` selecionado já tem `max-w-[820px]`, mas está limitado pelo container pai `max-w-[820px]` na linha 14. Vou aumentar ambos para dar mais largura ao texto.
+O usuário quer aproximar texto e imagem em `ConhecaSection.tsx` SEM aumentar a imagem. O espaço vazio vem de:
+1. Texto com `max-w-[480px]` dentro de uma coluna `md:col-span-8` (sobra muito espaço vazio à direita do texto)
+2. Gap entre colunas `md:gap-12`
 
-## Mudanças em `src/components/landing/HeroSection.tsx`
+Solução: manter a imagem no mesmo tamanho (`md:col-span-4`), mas reduzir a coluna de texto e empurrar a imagem para a esquerda. Vou usar `justify-self-start` na imagem com largura fixa, ou mais simples: reduzir a coluna do texto e o gap.
 
-1. **Linha 14** — container pai: trocar `max-w-[820px]` por `max-w-[1100px]`.
-2. **Linha 18** — parágrafo: trocar `max-w-[820px]` por `max-w-[1100px]`.
+## Mudanças em `src/components/landing/ConhecaSection.tsx`
 
-Isso permite que o texto "O seu aeródromo alternativo do Triângulo Mineiro..." ocupe mais largura horizontal antes de quebrar em nova linha.
+**Linha 41** — grid: trocar `gap-8 md:gap-12` por `gap-6 md:gap-6` para reduzir o espaçamento entre colunas.
+
+**Linha 45** — coluna do texto: trocar `md:col-span-8` por `md:col-span-5` para encolher a coluna do texto, fazendo a imagem ficar imediatamente ao lado do texto (a imagem mantém `md:col-span-4`, mesmo tamanho).
+
+Resultado: texto e imagem ficam visualmente próximos, e a imagem mantém exatamente o mesmo tamanho atual (4/12 colunas).
