@@ -1,7 +1,12 @@
+import { Plus } from "lucide-react";
+
 const AerodromoTecnologiaSection = () => (
   <section id="aerodromo-tecnologia" className="py-20 px-[6%] bg-background">
     <div className="max-w-[1100px] mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg">
+          <Plus className="h-6 w-6" strokeWidth={2.5} />
+        </div>
         {/* Aeródromo */}
         <div className="rounded-2xl border border-border bg-card p-10 lg:p-12 flex flex-col">
           <h3 className="font-display text-3xl tracking-[0.02em] text-foreground font-bold mb-6 text-center">
