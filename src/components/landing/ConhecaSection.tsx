@@ -7,6 +7,7 @@ import meteorologiaImg from "@/assets/diferencial-meteorologia.jpg";
 import patioImg from "@/assets/diferencial-patio.jpg";
 import hangaragemImg from "@/assets/diferencial-hangaragem.jpg";
 import hangaresImg from "@/assets/diferencial-hangares.jpg";
+import appImg from "@/assets/diferencial-app.png";
 
 const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: string; bg: string }> = [
   { title: "Pista Registrada 1040 metros", desc: "Lotes disponíveis para construção de hangares próprios, com infraestrutura completa e localização privilegiada.", imgAlt: "Hangares", img: hangaresImg, bg: "bg-[hsl(36,28%,87%)]" },
@@ -15,7 +16,7 @@ const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: s
   { title: "Apoio de Solo", desc: "Equipe de apoio dedicada ao piloto, oferecendo suporte completo antes, durante e após cada operação.", imgAlt: "Operador", img: operadorImg, bg: "bg-[hsl(30,25%,90%)]" },
   { title: "Câmera de Meteorologia", desc: "Monitoramento meteorológico em tempo real, permitindo acompanhamento das condições de voo a qualquer momento.", imgAlt: "Meteorologia", img: meteorologiaImg, bg: "bg-[hsl(40,40%,92%)]" },
   { title: "Sistema de Segurança", desc: "Vigilância 24h e controle de acesso garantindo a proteção total da sua aeronave e do patrimônio.", imgAlt: "Segurança", img: segurancaImg, bg: "bg-[hsl(45,45%,90%)]" },
-  { title: "App de Gerenciamento", desc: "Aplicativo para gestão e comunicação, centralizando todas as informações e serviços do aeródromo.", imgAlt: "App", bg: "bg-[hsl(40,30%,93%)]" },
+  { title: "App de Gerenciamento", desc: "Aplicativo para gestão e comunicação, centralizando todas as informações e serviços do aeródromo.", imgAlt: "App", img: appImg, bg: "bg-[hsl(40,30%,93%)]" },
   { title: "Pátio para Aeronaves", desc: "Pátio amplo para estacionamento de aeronaves com manobra confortável e organizada.", imgAlt: "Pátio", img: patioImg, bg: "bg-[hsl(38,38%,89%)]" },
 ];
 
