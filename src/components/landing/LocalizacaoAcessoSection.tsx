@@ -26,7 +26,7 @@ const LocalizacaoAcessoSection = () => (
               Acesso exclusivo pela beira da rodovia. Apenas 1km de estrada de terra.
             </span>
           </div>
-          <ul className="flex flex-col gap-5">
+          <ul className="flex flex-col gap-5 mx-0 px-[2px]">
             {TEMPOS.map((item) => (
               <li key={item} className="flex gap-4 items-start">
                 <Clock className="w-6 h-6 text-primary shrink-0 mt-0.5" />
