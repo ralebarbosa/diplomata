@@ -22,7 +22,7 @@ const PistaSection = () => (
       <div className="rounded-2xl border border-border bg-card p-10 lg:p-12">
         <div className="flex gap-3 items-start pb-6 mb-8 border-b border-border">
           <Plane className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-          <span className="text-foreground leading-[1.6] font-bold text-xl">
+          <span className="text-foreground leading-[1.6] text-xl font-medium">
             Pista registrada com 1040 metros de extensão, projetada conforme padrões aeronáuticos.
           </span>
         </div>
