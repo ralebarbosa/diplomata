@@ -12,16 +12,23 @@ const HeroSection = () => (
     <div className="absolute left-[6%] top-0 bottom-0 w-[2px] bg-primary/20" />
 
     <div className="relative z-20 w-full max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 md:gap-24 lg:gap-32 items-center md:pr-[8%] lg:pr-[15%]">
-      <div className="max-w-[640px]">
+      <div className="max-w-[640px] flex flex-col">
         <img
           src={logoDiplomata}
           alt="Aeródromo Diplomata"
-          className="h-[90px] md:h-28 w-auto mb-8 brightness-0 invert object-fill"
+          className="h-[90px] md:h-28 w-auto mb-8 brightness-0 invert object-fill order-1"
         />
-        <p className="leading-[1.2] md:leading-[1.75] max-w-[640px] text-left mb-8 md:mb-[34px] text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground">
+        <p className="leading-[1.2] md:leading-[1.75] max-w-[640px] text-left mb-8 md:mb-[34px] text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground order-2">
           Aeródromo inteligente para aviação geral
         </p>
-        <div className="flex flex-col sm:flex-row gap-3.5">
+        <img
+          src={iphoneMockup}
+          alt="iPhone exibindo o aeródromo Diplomata SS8X"
+          width={1000}
+          height={1000}
+          className="order-3 md:hidden self-center w-[95%] max-w-[460px] mb-8 object-contain pointer-events-none select-none"
+        />
+        <div className="flex flex-col sm:flex-row gap-3.5 order-4">
           <a
             href="#conheca"
             className="bg-primary text-primary-foreground rounded-sm px-7 py-3 text-[11px] font-bold tracking-[0.12em] uppercase no-underline hover:opacity-90 transition-opacity inline-block"
@@ -42,7 +49,7 @@ const HeroSection = () => (
         alt="iPhone exibindo o aeródromo Diplomata SS8X"
         width={1000}
         height={1000}
-        className="justify-self-center md:justify-self-end w-[85%] max-w-[400px] md:w-auto md:max-w-[420px] lg:max-w-[480px] object-contain pointer-events-none select-none"
+        className="hidden md:block justify-self-end md:w-auto md:max-w-[420px] lg:max-w-[480px] object-contain pointer-events-none select-none"
       />
     </div>
   </section>
