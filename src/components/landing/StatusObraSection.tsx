@@ -71,7 +71,7 @@ const StatusObraSection = () => (
                 <li key={etapa.title} className="flex gap-4 items-start">
                   <Icon
                     className={`w-6 h-6 shrink-0 mt-0.5 ${
-                      isDone ? "text-primary" : "text-foreground/60"
+                      isDone ? "text-green-600" : "text-foreground/60"
                     }`}
                   />
                   <div className="flex-1 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4">
