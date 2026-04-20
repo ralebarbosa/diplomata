@@ -1,5 +1,5 @@
 import heroImage from "@/assets/hero-aerodrome.jpg";
-import iphoneMockup from "@/assets/hero-iphone-mockup-v7.png";
+import iphoneMockup from "@/assets/hero-iphone-mockup-v8.png";
 import logoDiplomata from "@/assets/logo-diplomata.png";
 
 const HeroSection = () => (
