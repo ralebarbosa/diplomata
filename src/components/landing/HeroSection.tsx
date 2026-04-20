@@ -18,9 +18,6 @@ const HeroSection = () => (
           alt="Aeródromo Diplomata"
           className="h-32 md:h-40 w-auto mb-8 brightness-0 invert"
         />
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.9] text-primary-foreground tracking-[0.03em] mb-5 md:mb-7 font-sans font-extrabold">
-          Diplomata <span className="text-primary">SS8X</span>
-        </h1>
         <p className="leading-[1.2] md:leading-[1.75] max-w-[640px] text-left mb-8 md:mb-[34px] text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground">
           Aeródromo inteligente por assinatura
         </p>
