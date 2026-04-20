@@ -2,10 +2,10 @@ import { Plane } from "lucide-react";
 
 const PISTA_SPECS = [
   { label: "Indicativo", value: "SS8X" },
-  { label: "Comprimento", value: "1040 m" },
+  { label: "Operação", value: "VFR Diurna" },
   { label: "Largura", value: "20 m" },
   { label: "Altitude", value: "2530 pés" },
-  { label: "Operação", value: "VFR Diurna" },
+  { label: "Comprimento", value: "1040 m" },
   { label: "Cabeceiras", value: "05/23" },
 ];
 
