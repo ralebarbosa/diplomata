@@ -21,7 +21,7 @@ const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: s
 ];
 
 const ConhecaSection = () => (
-  <section id="conheca" className="py-20 px-[6%] bg-background">
+  <section id="conheca" className="px-[6%] bg-background py-[32px]">
     <div className="max-w-[1200px] mx-auto">
       <div className="flex flex-col gap-20 md:gap-24">
         {DIFERENCIAIS.map((d, i) => {
