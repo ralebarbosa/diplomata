@@ -10,7 +10,7 @@ import hangaresImg from "@/assets/diferencial-hangares.jpg";
 import appImg from "@/assets/diferencial-app.png";
 
 const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: string; bg: string }> = [
-  { title: "Pista Registrada 1040 metros", desc: "Lotes disponíveis para construção de hangares próprios, com infraestrutura completa e localização privilegiada.", imgAlt: "Hangares", img: hangaresImg, bg: "bg-[hsl(36,28%,87%)]" },
+  { title: "Pista Registrada 1040 metros", desc: "Pista registrada ANAC de 1040m x 20m de largura com o códico ICAO SS8X", imgAlt: "Hangares", img: hangaresImg, bg: "bg-[hsl(36,28%,87%)]" },
   { title: "Hangaragem", desc: "Hangaragem coberta para sua aeronave, protegendo contra intempéries e prolongando a vida útil do equipamento.", imgAlt: "Hangaragem", img: hangaragemImg, bg: "bg-[hsl(42,32%,91%)]" },
   { title: "Tanque de Combustível", desc: "Tanque próprio para abastecimento de aeronaves com agilidade e segurança em todas as operações.", imgAlt: "Tanque", img: tanqueImg, bg: "bg-[hsl(35,35%,88%)]" },
   { title: "Apoio de Solo", desc: "Equipe de apoio dedicada ao piloto, oferecendo suporte completo antes, durante e após cada operação.", imgAlt: "Operador", img: operadorImg, bg: "bg-[hsl(30,25%,90%)]" },
