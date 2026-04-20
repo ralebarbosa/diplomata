@@ -25,7 +25,7 @@ const AerodromoTecnologiaSection = () => (
         {/* Tecnologia */}
         <div className="rounded-2xl border border-border bg-card p-10 lg:p-12 flex flex-col">
           <h3 className="font-display text-3xl tracking-[0.02em] text-foreground font-bold mb-6 text-center">
-            Plataforma
+            Tecnologia
           </h3>
           <div className="rounded-xl aspect-[4/3] overflow-hidden flex items-center justify-center w-full bg-muted">
             <div className="flex flex-col items-center justify-center gap-2 opacity-40">
