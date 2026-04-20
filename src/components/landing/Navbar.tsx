@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-50 px-[6%] h-[60px] flex items-center justify-end transition-all duration-300"
+        className="fixed top-0 left-0 right-0 z-50 px-[6%] h-[60px] flex items-center justify-center transition-all duration-300"
         style={{
           background: scrolled ? '#fff' : 'transparent',
           borderBottom: scrolled ? '1px solid hsl(var(--border))' : 'none',
@@ -54,7 +54,7 @@ const Navbar = () => {
 
         <a
           href="#contato"
-          className="hidden md:inline-block bg-primary text-primary-foreground rounded-sm px-4 py-[7px] text-[10px] font-bold tracking-[0.12em] uppercase no-underline hover:opacity-90 transition-opacity"
+          className="hidden md:inline-block bg-primary text-primary-foreground rounded-sm px-4 py-[7px] text-[10px] font-bold tracking-[0.12em] uppercase no-underline hover:opacity-90 transition-opacity ml-9"
         >
           Contato
         </a>
