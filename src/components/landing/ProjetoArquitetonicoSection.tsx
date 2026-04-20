@@ -1,63 +1,51 @@
-import SectionLabel from "./SectionLabel";
-import SectionTitle from "./SectionTitle";
+import { Ruler, Plane } from "lucide-react";
 import plantaImg from "@/assets/projeto-planta.png";
 import aereaImg from "@/assets/projeto-aerea.png";
-import { Ruler, Plane } from "lucide-react";
 
 const ProjetoArquitetonicoSection = () => (
-  <section id="projeto" className="py-20 px-[6%] bg-muted">
-    <div className="max-w-[1200px] mx-auto">
-      <SectionLabel>Engenharia & Conformidade</SectionLabel>
-      <SectionTitle>PROJETO ARQUITETÔNICO AERONÁUTICO</SectionTitle>
-
-      <p className="text-base md:text-lg text-muted-foreground leading-[1.7] max-w-3xl mb-12">
-        Projeto de pista desenvolvido seguindo as regras aeronáuticas e padrões exigidos pelas regulamentações.
+  <section id="projeto" className="py-20 px-[6%] bg-background">
+    <div className="max-w-[1100px] mx-auto">
+      <h2 className="font-display text-3xl md:text-5xl tracking-[0.02em] text-foreground font-bold text-center mb-3">
+        Projeto Arquitetônico Aeronáutico
+      </h2>
+      <p className="text-muted-foreground text-center text-base md:text-lg mb-12">
+        Pista desenvolvida seguindo as regras aeronáuticas e padrões regulamentares
       </p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Planta técnica */}
-        <div className="group relative overflow-hidden rounded-sm bg-background border border-border shadow-sm hover:shadow-lg transition-shadow">
-          <div className="aspect-[16/9] overflow-hidden bg-white">
+        <div className="rounded-2xl border border-border bg-card p-10 lg:p-12 flex flex-col">
+          <div className="flex gap-3 items-start pb-6 mb-8 border-b border-border">
+            <Ruler className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+            <span className="text-foreground leading-[1.6] font-bold text-xl">
+              Planta técnica — layout da pista e lotes.
+            </span>
+          </div>
+          <div className="rounded-xl overflow-hidden flex-1 min-h-[320px] bg-white">
             <img
               src={plantaImg}
               alt="Planta técnica do projeto arquitetônico aeronáutico — pista, hangares e lotes"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain min-h-[320px]"
               loading="lazy"
             />
-          </div>
-          <div className="p-5 border-t border-border">
-            <div className="flex items-center gap-2 mb-1.5">
-              <Ruler className="w-4 h-4 text-primary" />
-              <span className="text-[10px] font-semibold text-primary tracking-[0.18em] uppercase">
-                Planta Técnica
-              </span>
-            </div>
-            <h3 className="font-display text-xl text-foreground tracking-[0.06em]">
-              LAYOUT DA PISTA E LOTES
-            </h3>
           </div>
         </div>
 
         {/* Vista aérea */}
-        <div className="group relative overflow-hidden rounded-sm bg-background border border-border shadow-sm hover:shadow-lg transition-shadow">
-          <div className="aspect-[16/9] overflow-hidden">
+        <div className="rounded-2xl border border-border bg-card p-10 lg:p-12 flex flex-col">
+          <div className="flex gap-3 items-start pb-6 mb-8 border-b border-border">
+            <Plane className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+            <span className="text-foreground leading-[1.6] font-bold text-xl">
+              Vista aérea — implantação no terreno.
+            </span>
+          </div>
+          <div className="rounded-xl overflow-hidden flex-1 min-h-[320px]">
             <img
               src={aereaImg}
               alt="Vista aérea do aeródromo Diplomata com sobreposição do projeto"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover min-h-[320px]"
               loading="lazy"
             />
-          </div>
-          <div className="p-5 border-t border-border">
-            <div className="flex items-center gap-2 mb-1.5">
-              <Plane className="w-4 h-4 text-primary" />
-              <span className="text-[10px] font-semibold text-primary tracking-[0.18em] uppercase">
-                Vista Aérea
-              </span>
-            </div>
-            <h3 className="font-display text-xl text-foreground tracking-[0.06em]">
-              IMPLANTAÇÃO NO TERRENO
-            </h3>
           </div>
         </div>
       </div>
