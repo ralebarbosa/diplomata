@@ -32,7 +32,7 @@ const Navbar = () => {
           <img
             src={logoDiplomata}
             alt="Aeródromo Diplomata"
-            className="h-[72px] md:h-[84px] w-auto"
+            className="h-[144px] md:h-[168px] w-auto"
           />
         </a>
 
