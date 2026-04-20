@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-50 px-[6%] h-[60px] flex items-center justify-between transition-all duration-300"
+        className="fixed top-0 left-0 right-0 z-50 px-[6%] h-[180px] flex items-center justify-between transition-all duration-300"
         style={{
           background: scrolled ? '#fff' : 'transparent',
           borderBottom: scrolled ? '1px solid hsl(var(--border))' : 'none',
