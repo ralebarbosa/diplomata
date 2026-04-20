@@ -16,7 +16,7 @@ const HeroSection = () => (
         <img
           src={logoDiplomata}
           alt="Aeródromo Diplomata"
-          className="h-[90px] md:h-28 w-auto mb-8 brightness-0 invert object-fill order-1"
+          className="h-[90px] md:h-28 w-auto mb-8 object-fill order-1"
         />
         <p className="leading-[1.2] md:leading-[1.75] max-w-[640px] mb-8 md:mb-[34px] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground order-2 text-3xl text-center">
           Aeródromo inteligente para aviação geral
