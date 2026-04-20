@@ -1,4 +1,4 @@
-import SectionLabel from "./SectionLabel";
+import { Plane } from "lucide-react";
 
 const PISTA_SPECS = [
   { label: "Indicativo", value: "SS8X" },
@@ -10,30 +10,38 @@ const PISTA_SPECS = [
 ];
 
 const PistaSection = () => (
-  <section id="pista" className="py-12 px-[6%] bg-muted">
+  <section id="pista" className="py-20 px-[6%] bg-background">
     <div className="max-w-[1100px] mx-auto">
-      <div className="flex items-center justify-between mb-5 flex-wrap gap-3">
-        <div>
-          <SectionLabel>Infraestrutura</SectionLabel>
-          <h2 className="font-display text-4xl tracking-[0.06em] text-foreground leading-none">
-            CARACTERÍSTICAS DA PISTA
-          </h2>
+      <h2 className="font-display text-3xl md:text-5xl tracking-[0.02em] text-foreground font-bold text-center mb-3">
+        Características da Pista
+      </h2>
+      <p className="text-muted-foreground text-center text-base md:text-lg mb-12">
+        Infraestrutura projetada para operação segura e eficiente
+      </p>
+
+      <div className="rounded-2xl border border-border bg-card p-10 lg:p-12">
+        <div className="flex gap-3 items-start pb-6 mb-8 border-b border-border">
+          <Plane className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+          <span className="text-foreground leading-[1.6] font-bold text-xl">
+            Pista registrada com 1040 metros de extensão, projetada conforme padrões aeronáuticos.
+          </span>
         </div>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-        {PISTA_SPECS.map((s) => (
-          <div
-            key={s.label}
-            className="flex justify-between items-center bg-accent border border-border rounded-sm px-[18px] py-3"
-          >
-            <span className="text-[10px] text-muted-foreground tracking-[0.1em] uppercase font-semibold">
-              {s.label}
-            </span>
-            <span className="font-display text-lg text-foreground tracking-[0.06em]">
-              {s.value}
-            </span>
-          </div>
-        ))}
+
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-5">
+          {PISTA_SPECS.map((s) => (
+            <li
+              key={s.label}
+              className="flex justify-between items-center border-b border-border/60 pb-4"
+            >
+              <span className="text-sm text-muted-foreground tracking-[0.05em] uppercase font-semibold">
+                {s.label}
+              </span>
+              <span className="text-lg md:text-xl text-foreground font-bold">
+                {s.value}
+              </span>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   </section>
