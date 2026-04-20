@@ -5,8 +5,8 @@ import logoDiplomata from "@/assets/logo-diplomata-v3.png";
 const HeroSection = () => (
   <section className="min-h-screen relative overflow-hidden flex items-center px-[6%] py-24">
     <div
-      className="absolute inset-0 bg-cover"
-      style={{ backgroundImage: `url(${heroImage})`, backgroundPosition: 'center 40%' }}
+      className="absolute inset-0 bg-cover bg-[center_25%] md:bg-[center_40%]"
+      style={{ backgroundImage: `url(${heroImage})` }}
     />
     <div className="absolute inset-0 bg-gradient-to-t from-black/[0.88] via-black/45 to-black/20 mx-0" />
     <div className="absolute left-[6%] top-0 bottom-0 w-[2px] bg-primary/20" />
