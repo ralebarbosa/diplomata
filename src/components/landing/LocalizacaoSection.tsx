@@ -1,30 +1,37 @@
-import SectionLabel from "./SectionLabel";
-import SectionTitle from "./SectionTitle";
+import { MapPin } from "lucide-react";
 import mapaLocalizacao from "@/assets/localizacao-mapa.png";
 
 const LocalizacaoSection = () => (
   <section id="localizacao" className="py-20 px-[6%] bg-background">
-    <div className="max-w-[1200px] mx-auto">
-      <SectionLabel>Localização Privilegiada</SectionLabel>
-      <SectionTitle mb={16}>LOCALIZAÇÃO ESTRATÉGICA</SectionTitle>
-
-      <p className="font-display text-lg md:text-2xl text-foreground/80 italic max-w-3xl mb-10 leading-snug">
-        Localizado ao lado da <span className="text-primary not-italic font-semibold">Vinícola Arpuro</span> e do futuro <span className="text-primary not-italic font-semibold">Condomínio Casa de Campo</span>
+    <div className="max-w-[1100px] mx-auto">
+      <h2 className="font-display text-3xl md:text-5xl tracking-[0.02em] text-foreground font-bold text-center mb-3">
+        Localização Estratégica
+      </h2>
+      <p className="text-muted-foreground text-center text-base md:text-lg mb-12">
+        Ao lado da Vinícola Arpuro e do futuro Condomínio Casa de Campo
       </p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">
-        {/* Coluna esquerda: Imagem aérea com vizinhos */}
-        <div className="rounded-sm overflow-hidden border border-border shadow-sm">
-          <img
-            src={mapaLocalizacao}
-            alt="Vista aérea mostrando a localização do Aeródromo Diplomata 8X, Vinícola Arpuro e Condomínio Casa de Campo"
-            className="w-full h-full object-cover min-h-[400px]"
-            loading="lazy"
-          />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Card de contexto */}
+        <div className="rounded-2xl border border-border bg-card p-10 lg:p-12 flex flex-col">
+          <div className="flex gap-3 items-start pb-6 mb-8 border-b border-border">
+            <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+            <span className="text-foreground leading-[1.6] font-bold text-xl">
+              Vista aérea da região e dos empreendimentos vizinhos.
+            </span>
+          </div>
+          <div className="rounded-xl overflow-hidden flex-1 min-h-[320px]">
+            <img
+              src={mapaLocalizacao}
+              alt="Vista aérea mostrando a localização do Aeródromo Diplomata 8X, Vinícola Arpuro e Condomínio Casa de Campo"
+              className="w-full h-full object-cover min-h-[320px]"
+              loading="lazy"
+            />
+          </div>
         </div>
 
-        {/* Coluna direita: Mapa */}
-        <div className="rounded-sm overflow-hidden border border-border min-h-[400px] lg:min-h-full shadow-sm">
+        {/* Google Maps */}
+        <div className="rounded-2xl overflow-hidden bg-dark min-h-[400px]">
           <iframe
             title="Localização do Aeródromo - BR-050 Km 133"
             src="https://www.google.com/maps?q=-19.416115,-48.071437&z=13&t=k&output=embed"
