@@ -16,7 +16,7 @@ const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: s
   { title: "App Multifunção", desc: "Aplicativo para gestão e comunicação, centralizando todas as informações e serviços do aeródromo.", imgAlt: "App", bg: "bg-[hsl(40,30%,93%)]" },
   { title: "Pátio para Aeronaves", desc: "Pátio amplo para estacionamento de aeronaves com manobra confortável e organizada.", imgAlt: "Pátio", img: patioImg, bg: "bg-[hsl(38,38%,89%)]" },
   { title: "Hangaragem", desc: "Hangaragem coberta para sua aeronave, protegendo contra intempéries e prolongando a vida útil do equipamento.", imgAlt: "Hangaragem", img: hangaragemImg, bg: "bg-[hsl(42,32%,91%)]" },
-  { title: "Espaço para Hangares", desc: "Lotes disponíveis para construção de hangares próprios, com infraestrutura completa e localização privilegiada.", imgAlt: "Hangares", img: hangaresImg, bg: "bg-[hsl(36,28%,87%)]" },
+  { title: "Pista Registrada 1050 metros", desc: "Lotes disponíveis para construção de hangares próprios, com infraestrutura completa e localização privilegiada.", imgAlt: "Hangares", img: hangaresImg, bg: "bg-[hsl(36,28%,87%)]" },
 ];
 
 const ConhecaSection = () => (
