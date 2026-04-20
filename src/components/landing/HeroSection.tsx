@@ -1,5 +1,6 @@
 import heroImage from "@/assets/hero-aerodrome.jpg";
 import iphoneMockup from "@/assets/hero-iphone-mockup.png";
+import logoDiplomata from "@/assets/logo-diplomata.png";
 
 const HeroSection = () => (
   <section className="min-h-screen relative overflow-hidden flex items-center px-[6%] py-24">
@@ -12,6 +13,11 @@ const HeroSection = () => (
 
     <div className="relative z-20 w-full max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 md:gap-24 lg:gap-32 items-center md:pr-[8%] lg:pr-[15%]">
       <div className="max-w-[640px]">
+        <img
+          src={logoDiplomata}
+          alt="Aeródromo Diplomata"
+          className="h-32 md:h-40 w-auto mb-8 brightness-0 invert"
+        />
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.9] text-primary-foreground tracking-[0.03em] mb-5 md:mb-7 font-sans font-extrabold">
           Diplomata <span className="text-primary">SS8X</span>
         </h1>

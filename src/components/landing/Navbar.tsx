@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logoDiplomata from "@/assets/logo-diplomata.png";
+
 
 const NAV_LINKS = [
   { href: "#pista", label: "Pista" },
@@ -22,19 +22,12 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-50 px-[6%] h-[180px] flex items-center justify-between transition-all duration-300"
+        className="fixed top-0 left-0 right-0 z-50 px-[6%] h-[60px] flex items-center justify-end transition-all duration-300"
         style={{
           background: scrolled ? '#fff' : 'transparent',
           borderBottom: scrolled ? '1px solid hsl(var(--border))' : 'none',
         }}
       >
-        <a href="#" className="flex items-center">
-          <img
-            src={logoDiplomata}
-            alt="Aeródromo Diplomata"
-            className="h-[144px] md:h-[168px] w-auto"
-          />
-        </a>
 
         <div className="hidden md:flex gap-9">
           {NAV_LINKS.map((l) => (
