@@ -47,7 +47,7 @@ const ConhecaSection = () => (
                     <img
                       src={d.img}
                       alt={d.imgAlt}
-                      className="w-full h-full object-cover"
+                      className={`w-full h-full object-cover ${d.img === appImg ? "scale-[1.6]" : ""}`}
                       loading="lazy"
                     />
                   ) : (
