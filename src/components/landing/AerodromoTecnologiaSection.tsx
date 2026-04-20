@@ -1,4 +1,5 @@
 import { Plus } from "lucide-react";
+import tecnologiaApp from "@/assets/tecnologia-app.png";
 
 const AerodromoTecnologiaSection = () => (
   <section id="aerodromo-tecnologia" className="py-20 px-[6%] bg-background">
@@ -28,12 +29,7 @@ const AerodromoTecnologiaSection = () => (
             Tecnologia
           </h3>
           <div className="rounded-xl aspect-[4/3] overflow-hidden flex items-center justify-center w-full bg-muted">
-            <div className="flex flex-col items-center justify-center gap-2 opacity-40">
-              <span className="text-4xl">📱</span>
-              <span className="text-[10px] text-muted-foreground tracking-[0.08em] uppercase">
-                Imagem Tecnologia
-              </span>
-            </div>
+            <img src={tecnologiaApp} alt="App do aeródromo Diplomata" className="w-full h-full object-contain" />
           </div>
         </div>
       </div>
