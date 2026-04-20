@@ -16,8 +16,8 @@ const LocalizacaoSection = () => (
         <div className="rounded-2xl border border-border bg-card p-10 lg:p-12 flex flex-col">
           <div className="flex gap-3 items-start pb-6 mb-8 border-b border-border">
             <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-            <span className="text-foreground leading-[1.6] font-bold text-xl">
-              Vista aérea da região e dos empreendimentos vizinhos.
+            <span className="text-foreground leading-[1.6] text-xl font-medium">
+              Ao lado da Vinícola Arpuro e do futuro Condomínio Casa de Campo
             </span>
           </div>
           <div className="rounded-xl overflow-hidden flex-1 min-h-[320px]">
@@ -34,7 +34,7 @@ const LocalizacaoSection = () => (
         <div className="rounded-2xl border border-border bg-card p-10 lg:p-12 flex flex-col">
           <div className="flex gap-3 items-start pb-6 mb-8 border-b border-border">
             <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-            <span className="text-foreground leading-[1.6] font-bold text-xl">
+            <span className="text-foreground leading-[1.6] text-xl font-medium">
               Veja a localização no Google Maps.
             </span>
           </div>
