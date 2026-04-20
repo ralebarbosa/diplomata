@@ -19,7 +19,7 @@ const HeroSection = () => (
           className="h-32 md:h-40 w-auto mb-8 brightness-0 invert"
         />
         <p className="leading-[1.2] md:leading-[1.75] max-w-[640px] text-left mb-8 md:mb-[34px] text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground">
-          Aeródromo inteligente por assinatura
+          Aeródromo inteligente para aviação geral
         </p>
         <div className="flex flex-col sm:flex-row gap-3.5">
           <a
