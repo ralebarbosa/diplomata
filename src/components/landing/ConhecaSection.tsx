@@ -9,14 +9,14 @@ import hangaragemImg from "@/assets/diferencial-hangaragem.jpg";
 import hangaresImg from "@/assets/diferencial-hangares.jpg";
 
 const DIFERENCIAIS: Array<{ title: string; desc: string; imgAlt: string; img?: string; bg: string }> = [
-  { title: "Pista Registrada 1050 metros", desc: "Lotes disponíveis para construção de hangares próprios, com infraestrutura completa e localização privilegiada.", imgAlt: "Hangares", img: hangaresImg, bg: "bg-[hsl(36,28%,87%)]" },
+  { title: "Pátio para Aeronaves", desc: "Pátio amplo para estacionamento de aeronaves com manobra confortável e organizada.", imgAlt: "Pátio", img: patioImg, bg: "bg-[hsl(38,38%,89%)]" },
   { title: "Hangaragem", desc: "Hangaragem coberta para sua aeronave, protegendo contra intempéries e prolongando a vida útil do equipamento.", imgAlt: "Hangaragem", img: hangaragemImg, bg: "bg-[hsl(42,32%,91%)]" },
   { title: "Tanque de Combustível", desc: "Tanque próprio para abastecimento de aeronaves com agilidade e segurança em todas as operações.", imgAlt: "Tanque", img: tanqueImg, bg: "bg-[hsl(35,35%,88%)]" },
   { title: "Apoio de Solo", desc: "Equipe de apoio dedicada ao piloto, oferecendo suporte completo antes, durante e após cada operação.", imgAlt: "Operador", img: operadorImg, bg: "bg-[hsl(30,25%,90%)]" },
   { title: "Câmera de Meteorologia", desc: "Monitoramento meteorológico em tempo real, permitindo acompanhamento das condições de voo a qualquer momento.", imgAlt: "Meteorologia", img: meteorologiaImg, bg: "bg-[hsl(40,40%,92%)]" },
   { title: "Sistema de Segurança", desc: "Vigilância 24h e controle de acesso garantindo a proteção total da sua aeronave e do patrimônio.", imgAlt: "Segurança", img: segurancaImg, bg: "bg-[hsl(45,45%,90%)]" },
   { title: "App de Controle", desc: "Aplicativo para gestão e comunicação, centralizando todas as informações e serviços do aeródromo.", imgAlt: "App", bg: "bg-[hsl(40,30%,93%)]" },
-  { title: "Pátio para Aeronaves", desc: "Pátio amplo para estacionamento de aeronaves com manobra confortável e organizada.", imgAlt: "Pátio", img: patioImg, bg: "bg-[hsl(38,38%,89%)]" },
+  { title: "Pista Registrada 1050 metros", desc: "Lotes disponíveis para construção de hangares próprios, com infraestrutura completa e localização privilegiada.", imgAlt: "Hangares", img: hangaresImg, bg: "bg-[hsl(36,28%,87%)]" },
 ];
 
 const ConhecaSection = () => (
