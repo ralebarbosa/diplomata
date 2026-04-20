@@ -39,7 +39,7 @@ const AerodromoTecnologiaSection = () => (
       </div>
 
       <h2 className="font-display text-3xl md:text-5xl tracking-[0.02em] text-foreground font-bold text-center mt-12 max-w-3xl mx-auto leading-tight">
-        Uma única cobrança e várias facilidades
+        Opere com liberdade e tenha toda a inteligência de uma operação aeronáutica moderna em um único ecossistema
       </h2>
     </div>
   </section>
