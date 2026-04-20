@@ -42,7 +42,7 @@ const HeroSection = () => (
         alt="iPhone exibindo o aeródromo Diplomata SS8X"
         width={1000}
         height={1000}
-        className="justify-self-center md:justify-self-end w-[60%] max-w-[280px] md:w-auto md:max-w-[420px] lg:max-w-[480px] object-contain pointer-events-none select-none"
+        className="justify-self-center md:justify-self-end w-[85%] max-w-[400px] md:w-auto md:max-w-[420px] lg:max-w-[480px] object-contain pointer-events-none select-none"
       />
     </div>
   </section>
