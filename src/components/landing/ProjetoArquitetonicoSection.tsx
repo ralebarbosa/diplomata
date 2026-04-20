@@ -17,7 +17,7 @@ const ProjetoArquitetonicoSection = () => (
         <div className="rounded-2xl border border-border bg-card p-10 lg:p-12 flex flex-col">
           <div className="flex gap-3 items-start pb-6 mb-8 border-b border-border">
             <Ruler className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-            <span className="text-foreground leading-[1.6] font-bold text-xl">
+            <span className="text-foreground leading-[1.6] text-xl font-normal">
               Planta técnica — layout da pista e lotes.
             </span>
           </div>
@@ -35,7 +35,7 @@ const ProjetoArquitetonicoSection = () => (
         <div className="rounded-2xl border border-border bg-card p-10 lg:p-12 flex flex-col">
           <div className="flex gap-3 items-start pb-6 mb-8 border-b border-border">
             <Plane className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-            <span className="text-foreground leading-[1.6] font-bold text-xl">
+            <span className="text-foreground leading-[1.6] text-xl font-normal">
               Vista aérea — implantação no terreno.
             </span>
           </div>
