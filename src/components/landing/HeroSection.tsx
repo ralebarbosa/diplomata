@@ -18,7 +18,7 @@ const HeroSection = () => (
           alt="Aeródromo Diplomata"
           className="h-[90px] md:h-28 w-auto mb-8 object-contain order-1"
         />
-        <p className="leading-[1.2] md:leading-[1.75] max-w-[640px] mb-8 md:mb-[34px] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground order-2 text-3xl text-center">
+        <p className="leading-[1.2] md:leading-[1.75] max-w-[640px] mb-8 md:mb-[34px] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground order-2 text-3xl text-left">
           Aeródromo inteligente para aviação geral
         </p>
         <img
@@ -26,7 +26,7 @@ const HeroSection = () => (
           alt="iPhone exibindo o aeródromo Diplomata SS8X"
           width={1000}
           height={1000}
-          className="order-3 md:hidden self-center w-[95%] max-w-[460px] mb-8 object-contain pointer-events-none select-none"
+          className="order-3 md:hidden w-[95%] max-w-[460px] mb-8 object-contain pointer-events-none select-none"
         />
         <div className="flex flex-col sm:flex-row gap-3.5 order-4">
           <a
