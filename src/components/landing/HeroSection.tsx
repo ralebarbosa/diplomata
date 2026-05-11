@@ -1,5 +1,4 @@
 import heroImage from "@/assets/hero-aerodrome.jpg";
-import iphoneMockup from "@/assets/hero-iphone-mockup-v8.png";
 import logoDiplomata from "@/assets/logo-diplomata-v3.png";
 
 const HeroSection = () => (
@@ -11,7 +10,7 @@ const HeroSection = () => (
     <div className="absolute inset-0 bg-gradient-to-t from-black/[0.88] via-black/45 to-black/20 mx-0" />
     <div className="absolute left-[6%] top-0 bottom-0 w-[2px] bg-primary/20" />
 
-    <div className="relative z-20 w-full max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 md:gap-24 lg:gap-32 items-center md:pr-[8%] lg:pr-[15%]">
+    <div className="relative z-20 w-full max-w-[1400px] mx-auto items-center">
       <div className="max-w-[640px] flex flex-col text-left">
         <img
           src={logoDiplomata}
@@ -21,13 +20,6 @@ const HeroSection = () => (
         <p className="leading-[1.2] md:leading-[1.75] max-w-[640px] mb-8 md:mb-[34px] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground order-2 text-3xl text-left">
           Aeródromo inteligente para aviação geral
         </p>
-        <img
-          src={iphoneMockup}
-          alt="iPhone exibindo o aeródromo Diplomata SS8X"
-          width={1000}
-          height={1000}
-          className="order-3 md:hidden w-[95%] max-w-[460px] mb-8 object-contain pointer-events-none select-none"
-        />
         <div className="flex flex-col sm:flex-row gap-3.5 order-4">
           <a
             href="#conheca"
@@ -43,14 +35,6 @@ const HeroSection = () => (
           </a>
         </div>
       </div>
-
-      <img
-        src={iphoneMockup}
-        alt="iPhone exibindo o aeródromo Diplomata SS8X"
-        width={1000}
-        height={1000}
-        className="hidden md:block justify-self-end md:w-auto md:max-w-[420px] lg:max-w-[480px] object-contain pointer-events-none select-none"
-      />
     </div>
   </section>
 );
