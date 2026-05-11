@@ -8,7 +8,7 @@ const LocalizacaoSection = () => (
         Localização Estratégica
       </h2>
       <p className="text-muted-foreground text-center text-base md:text-lg mb-12">
-        Ao lado da Vinícola Arpuro e do futuro Condomínio Casa de Campo
+        Ao lado da Vinícola Arpuro
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -17,13 +17,13 @@ const LocalizacaoSection = () => (
           <div className="flex gap-3 items-start pb-6 mb-8 border-b border-border">
             <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
             <span className="text-foreground leading-[1.6] text-xl font-medium">
-              Ao lado da Vinícola Arpuro e do futuro Condomínio Casa de Campo
+              Ao lado da Vinícola Arpuro
             </span>
           </div>
           <div className="rounded-xl overflow-hidden flex-1 min-h-[320px]">
             <img
               src={mapaLocalizacao}
-              alt="Vista aérea mostrando a localização do Aeródromo Diplomata 8X, Vinícola Arpuro e Condomínio Casa de Campo"
+              alt="Vista aérea mostrando a localização do Aeródromo Diplomata 8X e Vinícola Arpuro"
               className="w-full h-full object-cover min-h-[320px]"
               loading="lazy"
             />
