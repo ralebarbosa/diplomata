@@ -5,7 +5,7 @@ const NAV_LINKS = [
   { href: "#pista", label: "Pista" },
   { href: "#conheca", label: "Estrutura" },
   { href: "#servicos", label: "Serviços" },
-  { href: "#localizacao", label: "Localização" },
+  { href: "#localizacao-acesso", label: "Localização" },
   { href: "#contato", label: "Contato" },
 ];
 
