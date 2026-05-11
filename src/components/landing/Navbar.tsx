@@ -53,7 +53,9 @@ const Navbar = () => {
         </div>
 
         <a
-          href="#contato"
+          href="https://wa.me/5534996840966"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden md:inline-block bg-primary text-primary-foreground rounded-sm px-4 py-[7px] text-[10px] font-bold tracking-[0.12em] uppercase no-underline hover:opacity-90 transition-opacity ml-9"
         >
           Contato
