@@ -1,23 +1,21 @@
-## Objetivo
+## Problema
 
-Aplicar um blur localizado somente sobre o rótulo "CONDOMÍNIO casa de campo EM BREVE" que aparece dentro da imagem `localizacao-mapa.png`, mantendo o restante da imagem nítido.
+A logo no Hero parece esticada/deformada. A imagem fonte (`logo-diplomata-v3.png`, 1920x500) tem boa resolução, então o problema não é o arquivo — é a classe CSS `object-fill` aplicada ao `<img>`, que força a imagem a preencher a caixa ignorando a proporção natural.
 
-## Abordagem
+## Solução
 
-Em vez de editar o PNG (que perderia qualidade e seria irreversível), vou sobrepor um pequeno elemento com `backdrop-blur` posicionado exatamente em cima do rótulo, usando CSS. Isso preserva a imagem original e fica responsivo.
+**Arquivo:** `src/components/landing/HeroSection.tsx` (linha 19)
 
-### Mudanças
+Trocar `object-fill` por `object-contain` para que a logo respeite a proporção original (3,84:1). Como já usamos `h-[90px] md:h-28 w-auto`, o navegador calculará a largura proporcionalmente e a logo ficará nítida e sem distorção.
 
-**Arquivo:** `src/components/landing/LocalizacaoSection.tsx`
+Antes:
+```tsx
+className="h-[90px] md:h-28 w-auto mb-8 object-fill order-1"
+```
 
-1. Envolver o `<img>` do mapa em um container `relative`.
-2. Adicionar um `<div>` absolutamente posicionado sobre a região do rótulo (aproximadamente centro-esquerda da imagem) com:
-   - `backdrop-blur-md` (blur suave)
-   - `bg-white/10` (leve clareamento para suavizar)
-   - `rounded-md`
-   - Posição via porcentagens: `left-[36%] top-[47%] w-[20%] h-[12%]` (ajustável após verificação visual)
-   - `pointer-events-none`
+Depois:
+```tsx
+className="h-[90px] md:h-28 w-auto mb-8 object-contain order-1"
+```
 
-### Resultado esperado
-
-O rótulo "Condomínio Casa de Campo — Em Breve" aparece desfocado, enquanto Vinícola Arpuro e Aeródromo Diplomata continuam nítidos.
+Nenhuma outra alteração de layout é necessária.
