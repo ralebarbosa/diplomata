@@ -8,7 +8,7 @@ const ETAPAS = [
   { status: "progress", icon: Clock, title: "HANGAR 01", desc: "Fase de concretagem do piso" },
 ];
 
-const PROGRESSO = 90;
+const PROGRESSO = 100;
 
 const StatusObraSection = () => (
   <section id="status-obra" className="py-20 px-[6%] bg-background">
