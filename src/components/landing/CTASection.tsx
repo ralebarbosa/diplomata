@@ -11,7 +11,9 @@ const CTASection = () => (
         Mineiro.
       </p>
       <a
-        href="#contato"
+        href="https://wa.me/5534996840966"
+        target="_blank"
+        rel="noopener noreferrer"
         className="bg-primary text-primary-foreground rounded-sm px-7 py-3 text-[11px] font-bold tracking-[0.12em] uppercase no-underline hover:opacity-90 transition-opacity inline-block"
       >
         Fale Conosco

@@ -28,7 +28,9 @@ const HeroSection = () => (
             Conheça o Aeródromo
           </a>
           <a
-            href="#contato"
+            href="https://wa.me/5534996840966"
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-primary-foreground/25 text-primary-foreground/65 rounded-sm px-[26px] py-[11px] text-[11px] font-semibold tracking-[0.12em] uppercase no-underline hover:text-primary-foreground hover:border-primary-foreground/60 transition-all inline-block"
           >
             Entre em Contato
