@@ -36,7 +36,7 @@ const StatusObraSection = () => (
                 Fase atual
               </p>
               <p className="text-lg md:text-xl text-foreground font-bold">
-                Fase Final
+                Concluído 1 ª fase
               </p>
             </div>
             <div className="flex items-baseline gap-2">
