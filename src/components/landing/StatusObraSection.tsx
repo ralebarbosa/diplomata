@@ -5,7 +5,7 @@ const ETAPAS = [
   { status: "done", icon: CheckCircle2, title: "PÁTIO", desc: "Pátio compactado e recebendo aeronaves" },
   { status: "done", icon: CheckCircle2, title: "SEGURANÇA", desc: "Câmeras e sistema de segurança ativos" },
   { status: "done", icon: CheckCircle2, title: "COMBUSTÍVEL", desc: "Tanque disponível e padronizado" },
-  { status: "progress", icon: Clock, title: "HANGAR 01", desc: "Fase de concretagem do piso" },
+  { status: "done", icon: CheckCircle2, title: "HANGAR 01", desc: "Fase de concretagem do piso" },
 ];
 
 const PROGRESSO = 100;
