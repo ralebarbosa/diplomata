@@ -12,7 +12,7 @@ const HeroSection = () => (
     <div className="absolute left-[6%] top-0 bottom-0 w-[2px] bg-primary/20" />
 
     <div className="relative z-20 w-full max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 md:gap-24 lg:gap-32 items-center md:pr-[8%] lg:pr-[15%]">
-      <div className="max-w-[640px] flex flex-col">
+      <div className="max-w-[640px] flex flex-col text-left">
         <img
           src={logoDiplomata}
           alt="Aeródromo Diplomata"
