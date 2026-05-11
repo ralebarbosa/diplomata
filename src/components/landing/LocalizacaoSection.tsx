@@ -20,12 +20,16 @@ const LocalizacaoSection = () => (
               Ao lado da Vinícola Arpuro
             </span>
           </div>
-          <div className="rounded-xl overflow-hidden flex-1 min-h-[320px]">
+          <div className="relative rounded-xl overflow-hidden flex-1 min-h-[320px]">
             <img
               src={mapaLocalizacao}
               alt="Vista aérea mostrando a localização do Aeródromo Diplomata 8X e Vinícola Arpuro"
               className="w-full h-full object-cover min-h-[320px]"
               loading="lazy"
+            />
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute left-[28%] top-[46%] w-[20%] h-[13%] backdrop-blur-md bg-white/5 rounded-md"
             />
           </div>
         </div>

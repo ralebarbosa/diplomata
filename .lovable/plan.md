@@ -1,22 +1,23 @@
+## Objetivo
 
-## Corrigir exibição da logo no Hero
+Aplicar um blur localizado somente sobre o rótulo "CONDOMÍNIO casa de campo EM BREVE" que aparece dentro da imagem `localizacao-mapa.png`, mantendo o restante da imagem nítido.
 
-**Problema:** A logo nova (`logo-diplomata-v3.png`) está sendo exibida como silhueta branca porque o componente aplica os filtros CSS `brightness-0 invert`, herdados da versão anterior da logo (que era preta e precisava virar branca sobre o fundo escuro).
+## Abordagem
 
-**Solução:** Remover os filtros `brightness-0 invert` do `<img>` da logo no `HeroSection.tsx`, preservando todas as outras classes (tamanho, espaçamento, ordem, etc.) para manter as características originais do layout.
+Em vez de editar o PNG (que perderia qualidade e seria irreversível), vou sobrepor um pequeno elemento com `backdrop-blur` posicionado exatamente em cima do rótulo, usando CSS. Isso preserva a imagem original e fica responsivo.
 
-### Mudança técnica
+### Mudanças
 
-**Arquivo:** `src/components/landing/HeroSection.tsx` (linha 14)
+**Arquivo:** `src/components/landing/LocalizacaoSection.tsx`
 
-Antes:
-```tsx
-className="h-[90px] md:h-28 w-auto mb-8 brightness-0 invert object-fill order-1"
-```
+1. Envolver o `<img>` do mapa em um container `relative`.
+2. Adicionar um `<div>` absolutamente posicionado sobre a região do rótulo (aproximadamente centro-esquerda da imagem) com:
+   - `backdrop-blur-md` (blur suave)
+   - `bg-white/10` (leve clareamento para suavizar)
+   - `rounded-md`
+   - Posição via porcentagens: `left-[36%] top-[47%] w-[20%] h-[12%]` (ajustável após verificação visual)
+   - `pointer-events-none`
 
-Depois:
-```tsx
-className="h-[90px] md:h-28 w-auto mb-8 object-fill order-1"
-```
+### Resultado esperado
 
-Assim a logo será renderizada com suas cores originais sobre o fundo escuro do hero.
+O rótulo "Condomínio Casa de Campo — Em Breve" aparece desfocado, enquanto Vinícola Arpuro e Aeródromo Diplomata continuam nítidos.
