@@ -6,7 +6,7 @@ const NAV_LINKS = [
   { href: "#conheca", label: "Estrutura" },
   { href: "#servicos", label: "Serviços" },
   { href: "#localizacao-acesso", label: "Localização" },
-  { href: "#contato", label: "Contato" },
+  
 ];
 
 const Navbar = () => {
